@@ -4,7 +4,8 @@ import "./globals.css";
 import { MainNav } from "@/components/main-nav";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Footer } from "@/components/footer";
-import { cn } from "@/lib/utils"
+import { cn } from "@/lib/utils";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -23,7 +24,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}>
+      {/* <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}> */}
+      <body className={cn("min-h-screen bg-background font-sans antialiased")}>
         <ThemeProvider attribute="class" defaultTheme="light">
           <div className="relative flex min-h-screen flex-col">
             <MainNav />
