@@ -66,7 +66,7 @@ export function ActivitiesSection() {
           <TabsList className="mb-8 grid w-full grid-cols-2 gap-2 md:grid-cols-5">
             {activities.map((activity) => (
               <TabsTrigger key={activity.id} value={activity.id} className="text-xs md:text-sm">
-                {activity.title.split(" ")[0]}
+                {activity.title.split(" ")[1]}
               </TabsTrigger>
             ))}
           </TabsList>
