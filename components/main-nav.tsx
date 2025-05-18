@@ -26,7 +26,7 @@ export function MainNav() {
       className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-white/95 shadow-md backdrop-blur-sm dark:bg-gray-950/95" : "bg-transparent"
         }`}
     >
-      <div className="container flex h-20 items-center justify-between  px-4 md:px-6">
+      <div className="container mx-auto flex h-24 gap-x-5 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <div className="relative p-0.5 flex h-20 w-20 items-center justify-center overflow-hidden rounded-full">

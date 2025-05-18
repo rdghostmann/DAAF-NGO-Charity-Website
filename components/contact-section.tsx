@@ -11,7 +11,7 @@ import { Phone, Mail, MapPin } from "lucide-react"
 export function ContactSection() {
   return (
     <section id="contact" className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ export function ContactSection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <MapPin className="mt-1 h-5 w-5 text-primary" />
+                  <MapPin className="mt-1 h-10 w-10 text-primary" />
                   <div>
                     <p className="font-medium">Address</p>
                     <p className="text-muted-foreground">
@@ -90,14 +90,14 @@ export function ContactSection() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Phone className="mt-1 h-5 w-5 text-primary" />
+                  <Phone className="mt-1 h-8 w-8 text-primary" />
                   <div>
                     <p className="font-medium">Phone</p>
                     <div className="space-y-1 text-muted-foreground">
-                      <p>Rt. Revd Kingsley Chukwukamadu Obuh: +2347066898778</p>
-                      <p>Revd. Canon Prosper Okoh: +23480837518260</p>
-                      <p>Lady Patience Ogbewe: +2347037706308</p>
-                      <p>Revd Canon Nnaoma Ijezie: +2348063616599</p>
+                      <p><span>📱</span>Rt. Revd Kingsley Chukwukamadu Obuh:<br className="" /> +2347066898778</p>
+                      <p><span>📱</span>Revd. Canon Prosper Okoh:<br className="" /> +23480837518260</p>
+                      <p><span>📱</span>Lady Patience Ogbewe:<br className="" /> +2347037706308</p>
+                      <p><span>📱</span>Revd Canon Nnaoma Ijezie:<br className="" /> +2348063616599</p>
                     </div>
                   </div>
                 </div>
