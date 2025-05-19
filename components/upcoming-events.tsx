@@ -14,7 +14,7 @@ export function UpcomingEvents() {
       time: "6:00 PM - 10:00 PM",
       location: "Grand Hotel, Asaba",
       description: "Join us for an evening of celebration and fundraising to support our various programs.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/annual-charity-gala.png",
     },
     {
       title: "Community Health Outreach",
@@ -22,7 +22,7 @@ export function UpcomingEvents() {
       time: "9:00 AM - 4:00 PM",
       location: "St. Barnabas Community Center",
       description: "Free health screenings and consultations for community members.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/community-health-outreach.png",
     },
     {
       title: "Volunteer Orientation",
@@ -30,7 +30,7 @@ export function UpcomingEvents() {
       time: "10:00 AM - 12:00 PM",
       location: "DAAF Headquarters, Asaba",
       description: "Learn about volunteer opportunities and how you can get involved with our work.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/voluteer-orientation.png",
     },
   ]
 

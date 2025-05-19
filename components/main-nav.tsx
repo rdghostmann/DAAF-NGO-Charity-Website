@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import Image from "next/image"
-import Logo from "@/public/logo.png"
+import Logo from "@/public/DAAF_Logo-1.png"
 
 export function MainNav() {
   const [isScrolled, setIsScrolled] = React.useState(false)
@@ -30,8 +30,8 @@ export function MainNav() {
         <Link href="/" className="flex items-center gap-2">
           <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <div className="relative p-0.5 border-2 border-blue-500 flex h-20 w-20 items-center justify-center overflow-hidden rounded-full">
-              {/* <Image src={Logo} alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full" priority/> */}
-              <img src="./logo.png" alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full object-cover object-center" />
+              <Image src={Logo} alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full object-cover object-center" priority/>
+              {/* <img src="/DAAF_Logo-1.png" alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full object-cover object-center" /> */}
             </div>
             {/* <span className="text-2xl font-bold text-primary">DAAF</span>
             <span className="hidden text-xl font-medium text-muted-foreground md:inline-block">| Touching Lives</span> */}
