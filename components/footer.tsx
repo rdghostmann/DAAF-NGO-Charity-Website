@@ -68,7 +68,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="#activities" className="text-muted-foreground hover:text-foreground">
-                  Ewulu Integrated Farm
+                  Food Security Program - Ewulu Integrated Farm
+                </Link>
+              </li>
+              <li>
+                <Link href="#activities" className="text-muted-foreground hover:text-foreground">
+                  Hospitality and Prison Visitation
                 </Link>
               </li>
               <li>
