@@ -89,18 +89,7 @@ export function ContactSection() {
                     <p className="text-muted-foreground">DaafDoA@gmail.com</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <Phone className="mt-1 size-4 text-primary" />
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <div className="space-y-1 text-muted-foreground">
-                      <p><span>📱</span>Rt. Revd Kingsley Chukwukamadu Obuh:<br /> +2347066898778</p>
-                      <p><span>📱</span>Revd. Canon Prosper Okoh:<br /> +23480837518260</p>
-                      <p><span>📱</span>Lady Patience Ogbewe:<br /> +2347037706308</p>
-                      <p><span>📱</span>Revd Canon Nnaoma Ijezie:<br /> +2348063616599</p>
-                    </div>
-                  </div>
-                </div>
+                
               </CardContent>
             </Card>
 
