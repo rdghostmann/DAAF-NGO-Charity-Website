@@ -29,7 +29,7 @@ export function HistorySection() {
     },
     {
       year: "2015",
-      title: "Ewulu Integrated Farm",
+      title: "Food Security - Ewulu Integrated Farm",
       description: "Launched our sustainable agriculture initiative to promote food security.",
     },
     {
