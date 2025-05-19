@@ -7,6 +7,8 @@ import { motion } from "framer-motion"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import Image from "next/image"
+import Logo from "@/public/DAAF_Logo-1.png"
 
 export function MainNav() {
   const [isScrolled, setIsScrolled] = React.useState(false)
@@ -21,15 +23,18 @@ export function MainNav() {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full transition-all duration-300 ${
-        isScrolled ? "bg-white/95 shadow-md backdrop-blur-sm dark:bg-gray-950/95" : "bg-transparent"
-      }`}
+      className={`sticky top-0 z-50 w-full transition-all duration-300 ${isScrolled ? "bg-white/95 shadow-md backdrop-blur-sm dark:bg-gray-950/95" : "bg-transparent"
+        }`}
     >
-      <div className="container flex h-20 items-center justify-between px-4 md:px-6">
+      <div className="container mx-auto flex h-24 gap-x-5 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <span className="text-2xl font-bold text-primary">DAAF</span>
-            <span className="hidden text-xl font-medium text-muted-foreground md:inline-block">| Touching Lives</span>
+            <div className="relative p-0.5 border-2 border-blue-500 flex h-20 w-20 items-center justify-center overflow-hidden rounded-full">
+              <Image src={Logo} alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full object-cover object-center" priority/>
+              {/* <img src="/DAAF_Logo-1.png" alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full object-cover object-center" /> */}
+            </div>
+            {/* <span className="text-2xl font-bold text-primary">DAAF</span>
+            <span className="hidden text-xl font-medium text-muted-foreground md:inline-block">| Touching Lives</span> */}
           </motion.div>
         </Link>
         <nav className="hidden gap-6 md:flex">

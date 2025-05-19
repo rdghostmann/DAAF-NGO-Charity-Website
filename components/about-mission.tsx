@@ -28,7 +28,7 @@ export function AboutMission() {
 
   return (
     <section className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-8 md:grid-cols-3">
             {items.map((item, index) => (

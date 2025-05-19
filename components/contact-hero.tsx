@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 export function ContactHero() {
   return (
     <section className="relative bg-primary/10 py-24 md:py-32">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

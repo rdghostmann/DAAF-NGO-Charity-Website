@@ -7,7 +7,7 @@ import Link from "next/link"
 export function CallToAction() {
   return (
     <section className="bg-primary py-16 text-white">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -28,7 +28,7 @@ export function CallToAction() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="h-12 border-white px-8 text-white hover:bg-white/10"
+                className="h-12 border-white px-8 text-blue-500 hover:bg-white"
               >
                 <Link href="/volunteer">Become a Volunteer</Link>
               </Button>

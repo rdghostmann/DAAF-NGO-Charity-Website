@@ -11,7 +11,7 @@ import { Phone, Mail, MapPin } from "lucide-react"
 export function ContactSection() {
   return (
     <section id="contact" className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,7 +74,7 @@ export function ContactSection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <MapPin className="mt-1 h-5 w-5 text-primary" />
+                  <MapPin className="mt-1 size-5 text-primary" />
                   <div>
                     <p className="font-medium">Address</p>
                     <p className="text-muted-foreground">
@@ -83,24 +83,13 @@ export function ContactSection() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Mail className="mt-1 h-5 w-5 text-primary" />
+                  <Mail className="mt-1 size-4 text-primary" />
                   <div>
                     <p className="font-medium">Email</p>
                     <p className="text-muted-foreground">DaafDoA@gmail.com</p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4">
-                  <Phone className="mt-1 h-5 w-5 text-primary" />
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <div className="space-y-1 text-muted-foreground">
-                      <p>Rt. Revd Kingsley Chukwukamadu Obuh: +2347066898778</p>
-                      <p>Revd. Canon Prosper Okoh: +23480837518260</p>
-                      <p>Lady Patience Ogbewe: +2347037706308</p>
-                      <p>Revd Canon Nnaoma Ijezie: +2348063616599</p>
-                    </div>
-                  </div>
-                </div>
+
               </CardContent>
             </Card>
 
@@ -110,10 +99,14 @@ export function ContactSection() {
               </CardHeader>
               <CardContent className="aspect-video overflow-hidden rounded-md">
                 <div className="h-full w-full bg-muted">
-                  {/* This would be a map component in a real implementation */}
-                  <div className="flex h-full w-full items-center justify-center bg-[url('/placeholder.svg?height=300&width=600')] bg-cover bg-center">
-                    <p className="text-center text-muted-foreground">Interactive map would be displayed here</p>
-                  </div>
+                  <iframe
+                    className="w-full h-full border-none"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.163614373583!2d6.735936314753759!3d6.210893995498464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042f0b2e2b7c0d1%3A0x8a6d2e5e1e5e5e5e!2s60%20Dennis%20Osadebay%20Way%2C%20Asaba%2C%20Delta%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1716040000000!5m2!1sen!2sng"
+                    allowFullScreen={true}
+                    loading="lazy"
+                    title="DAAF Main Office - 60 Dennis Osadebay Way, Asaba"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </CardContent>
             </Card>

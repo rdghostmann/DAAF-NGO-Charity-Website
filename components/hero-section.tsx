@@ -22,7 +22,7 @@ export function HeroSection() {
           className="mx-auto max-w-3xl"
         >
           <h1 className="mb-6 text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-            Diocese of Asaba Agape Foundation
+           <span className=""> Diocese of</span> Asaba Agape Foundation
           </h1>
           <p className="mb-2 text-xl font-medium text-primary">TOUCHING LIVES</p>
           <p className="mb-8 text-xl text-muted-foreground">

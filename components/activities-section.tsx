@@ -14,41 +14,41 @@ export function ActivitiesSection() {
       title: "Elderly Care Ministry",
       description: "Supporting and caring for the elderly in our community with dignity and respect.",
       icon: <Users className="h-6 w-6" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/elderly-care-ministry-2.png",
     },
     {
       id: "correctional",
-      title: "Correctional Center & Hospital Ministries",
+      title: "Correctional Care Health & Hospital Ministries",
       description: "Providing spiritual and material support to those in correctional facilities and hospitals.",
       icon: <Heart className="h-6 w-6" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/correctional-center-1.png",
     },
     {
       id: "orphanage",
       title: "St. Barnabas Orphanage Home",
       description: "Providing a loving home and care for orphaned children in our community.",
       icon: <Home className="h-6 w-6" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/st-barnabas-orphanage-3.png",
     },
     {
       id: "farm",
       title: "Food Security - Ewulu Integrated Farm",
       description: "Promoting sustainable agriculture and food security through our integrated farm.",
       icon: <BookOpen className="h-6 w-6" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/food-security.jpg",
     },
     {
       id: "healthcare",
       title: "Health Care Services – Balm of Gilead Hospital",
       description: "Providing quality healthcare services to those in need through our hospital.",
       icon: <Stethoscope className="h-6 w-6" />,
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/health-care-services-1.jpg",
     },
   ]
 
   return (
     <section id="activities" className="bg-muted/30 py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -65,8 +65,9 @@ export function ActivitiesSection() {
         <Tabs defaultValue="elderly" className="mx-auto max-w-4xl">
           <TabsList className="mb-8 grid w-full grid-cols-2 gap-2 md:grid-cols-5">
             {activities.map((activity) => (
-              <TabsTrigger key={activity.id} value={activity.id} className="text-xs md:text-sm">
-                {activity.title.split(" ")[1]}
+              <TabsTrigger key={activity.id} value={activity.id} className="text-[10px] w-fit md:text-sm">
+                {/* {activity.title.split(" ")[1]} */}
+                {activity.title.split(" ").slice(0, 2).join(" ")}
               </TabsTrigger>
             ))}
           </TabsList>
@@ -83,6 +84,7 @@ export function ActivitiesSection() {
                       src={activity.image}
                       alt={activity.title}
                       className="h-full w-full object-cover"
+                      fetchPriority="auto"
                     />
                   </div>
                   <div className="flex flex-col">

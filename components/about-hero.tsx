@@ -1,11 +1,12 @@
 "use client"
 
 import { motion } from "framer-motion"
+import CountUp from "react-countup"
 
 export function AboutHero() {
   return (
     <section className="relative bg-primary/10 py-24 md:py-32">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 md:gap-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -26,11 +27,15 @@ export function AboutHero() {
               </div>
               <div className="flex items-center gap-2">
                 <div className="h-1 w-12 bg-primary"></div>
-                <span className="text-sm font-medium">1000+ Lives Impacted</span>
+                <span className="text-sm font-medium">
+                  <CountUp end={1000} duration={2} separator="," />+ Lives Impacted
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="h-1 w-12 bg-primary"></div>
-                <span className="text-sm font-medium">5+ Active Programs</span>
+                <span className="text-sm font-medium">
+                  <CountUp end={5} duration={2} />+ Active Programs
+                </span>
               </div>
             </div>
           </motion.div>
@@ -41,7 +46,7 @@ export function AboutHero() {
             className="relative aspect-video overflow-hidden rounded-lg md:aspect-auto md:h-full"
           >
             <img
-              src="/placeholder.svg?height=600&width=800"
+              src="/DAAF_Logo-2.png"
               alt="DAAF team members working in the community"
               className="h-full w-full object-cover"
             />

@@ -11,7 +11,7 @@ export function CausesGrid() {
     {
       title: "Elderly Care Ministry",
       description: "Supporting and caring for the elderly in our community with dignity and respect.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/elderly-care-ministry-1.png",
       raised: 15000,
       goal: 25000,
       progress: 60,
@@ -19,7 +19,7 @@ export function CausesGrid() {
     {
       title: "St. Barnabas Orphanage Home",
       description: "Providing a loving home and care for orphaned children in our community.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "st-barnabas-orphanage-5.jpg",
       raised: 35000,
       goal: 50000,
       progress: 70,
@@ -27,15 +27,16 @@ export function CausesGrid() {
     {
       title: "Balm of Gilead Hospital",
       description: "Providing quality healthcare services to those in need through our hospital.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/health-care-services-3.jpg",
       raised: 45000,
       goal: 100000,
       progress: 45,
     },
     {
-      title: "Ewulu Integrated Farm",
+      // title: "Ewulu Integrated Farm",
+      title: "Food Security",
       description: "Promoting sustainable agriculture and food security through our integrated farm.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/food-security.jpg",
       raised: 20000,
       goal: 40000,
       progress: 50,
@@ -43,7 +44,7 @@ export function CausesGrid() {
     {
       title: "Correctional Center Ministry",
       description: "Providing spiritual and material support to those in correctional facilities.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/health-care-8.png",
       raised: 8000,
       goal: 20000,
       progress: 40,
@@ -51,16 +52,24 @@ export function CausesGrid() {
     {
       title: "Education Scholarship Fund",
       description: "Supporting education for underprivileged children in our community.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/st-barnabas-orphanage-6.jpg",
       raised: 12000,
       goal: 30000,
       progress: 40,
     },
+    {
+      title: "Hospitality and Prison Visitation",
+      description: "Visiting and supporting individuals in hospitals and correctional centers, offering hope, care, and encouragement.",
+      image: "/food-security.jpg",
+      raised: 20000,
+      goal: 40000,
+      progress: 50,
+    }
   ]
 
   return (
     <section className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {causes.map((cause, index) => (
             <motion.div

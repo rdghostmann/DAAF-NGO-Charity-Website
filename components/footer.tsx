@@ -4,7 +4,7 @@ import { Heart } from "lucide-react"
 export function Footer() {
   return (
     <footer className="border-t bg-muted/40">
-      <div className="container px-4 py-12 md:px-6">
+      <div className="container mx-auto px-4 py-12 md:px-6">
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Diocese of Asaba Agape Foundation</h3>
@@ -68,7 +68,12 @@ export function Footer() {
               </li>
               <li>
                 <Link href="#activities" className="text-muted-foreground hover:text-foreground">
-                  Ewulu Integrated Farm
+                  Food Security Program - Ewulu Integrated Farm
+                </Link>
+              </li>
+              <li>
+                <Link href="#activities" className="text-muted-foreground hover:text-foreground">
+                  Hospitality and Prison Visitation
                 </Link>
               </li>
               <li>

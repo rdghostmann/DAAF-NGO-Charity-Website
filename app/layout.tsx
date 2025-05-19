@@ -7,14 +7,12 @@ import { Footer } from "@/components/footer";
 import { cn } from "@/lib/utils";
 
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Diocese of Asaba Agape Foundation (DAAF) - Touching Lives",
-  description:
-    "A humanitarian and sustainable development organization rooted in the Diocese of Asaba, Anglican Communion in Nigeria.",
-    generator: 'RdTechSolutions',
+  description: "A humanitarian and sustainable development organization rooted in the Diocese of Asaba, Anglican Communion in Nigeria.",
+  generator: 'RdTechSolutions',
 };
 
 export default function RootLayout({
@@ -24,15 +22,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      {/* <body className={cn("min-h-screen bg-background font-sans antialiased", fontSans.variable)}> */}
-      <body className={cn("min-h-screen bg-background font-sans antialiased")}>
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <div className="relative flex min-h-screen flex-col">
-            <MainNav />
-            <div className="flex-1">{children}</div>
-            <Footer />
-          </div>
-        </ThemeProvider>
+      <body className={cn("min-h-screen bg-background antialiased", inter.className)}>        <ThemeProvider attribute="class" defaultTheme="light">
+        <div className="relative flex min-h-screen flex-col">
+          <MainNav />
+          <div className="flex-1">{children}</div>
+          <Footer />
+        </div>
+      </ThemeProvider>
       </body>
     </html>
   )
