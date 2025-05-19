@@ -122,7 +122,7 @@ export function DonationForm() {
                           <Input id="custom-monthly" type="number" placeholder="Enter amount" className="pl-8" />
                         </div>
                       </div>
-                      <div className="space-y-2">
+                      {/* <div className="space-y-2">
                         <Label>Payment Method</Label>
                         <div className="grid grid-cols-3 gap-4">
                           <Button variant="outline" className="flex flex-col gap-1 p-3">
@@ -138,7 +138,7 @@ export function DonationForm() {
                             <span className="text-xs">Transfer</span>
                           </Button>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </TabsContent>
                 </Tabs>
