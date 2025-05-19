@@ -83,6 +83,7 @@ export function ActivitiesSection() {
                       src={activity.image}
                       alt={activity.title}
                       className="h-full w-full object-cover"
+                      fetchPriority="auto"
                     />
                   </div>
                   <div className="flex flex-col">
