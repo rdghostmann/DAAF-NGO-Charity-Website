@@ -18,7 +18,7 @@ export function ActivitiesSection() {
     },
     {
       id: "correctional",
-      title: "Correctional Center & Hospital Ministries",
+      title: "Correctional Care Health & Hospital Ministries",
       description: "Providing spiritual and material support to those in correctional facilities and hospitals.",
       icon: <Heart className="h-6 w-6" />,
       image: "/correctional-center-1.png",
@@ -65,7 +65,7 @@ export function ActivitiesSection() {
         <Tabs defaultValue="elderly" className="mx-auto max-w-4xl">
           <TabsList className="mb-8 grid w-full grid-cols-2 gap-2 md:grid-cols-5">
             {activities.map((activity) => (
-              <TabsTrigger key={activity.id} value={activity.id} className="text-xs md:text-sm">
+              <TabsTrigger key={activity.id} value={activity.id} className="text-[10px] w-fit md:text-sm">
                 {/* {activity.title.split(" ")[1]} */}
                 {activity.title.split(" ").slice(0, 2).join(" ")}
               </TabsTrigger>
