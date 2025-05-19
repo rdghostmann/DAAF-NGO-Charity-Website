@@ -69,7 +69,7 @@ export function CausesGrid() {
 
   return (
     <section className="py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {causes.map((cause, index) => (
             <motion.div
