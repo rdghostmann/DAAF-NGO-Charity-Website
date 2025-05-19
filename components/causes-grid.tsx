@@ -33,9 +33,10 @@ export function CausesGrid() {
       progress: 45,
     },
     {
-      title: "Ewulu Integrated Farm",
+      // title: "Ewulu Integrated Farm",
+      title: "Food Security",
       description: "Promoting sustainable agriculture and food security through our integrated farm.",
-      image: "/placeholder.svg?height=400&width=600",
+      image: "/food-security.jpg",
       raised: 20000,
       goal: 40000,
       progress: 50,
@@ -56,6 +57,14 @@ export function CausesGrid() {
       goal: 30000,
       progress: 40,
     },
+    {
+      title: "Hospitality and Prison Visitation",
+      description: "Visiting and supporting individuals in hospitals and correctional centers, offering hope, care, and encouragement.",
+      image: "/food-security.jpg",
+      raised: 20000,
+      goal: 40000,
+      progress: 50,
+    }
   ]
 
   return (
