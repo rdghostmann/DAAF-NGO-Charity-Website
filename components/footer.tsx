@@ -17,33 +17,43 @@ export function Footer() {
             <h3 className="text-lg font-bold">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="#home" className="text-muted-foreground hover:text-foreground">
+                <Link href="/" className="text-muted-foreground hover:text-foreground">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-muted-foreground hover:text-foreground">
+                <Link href="/about" className="text-muted-foreground hover:text-foreground">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="#objectives" className="text-muted-foreground hover:text-foreground">
+                <Link href="/about" className="text-muted-foreground hover:text-foreground">
                   Our Objectives
                 </Link>
               </li>
               <li>
-                <Link href="#activities" className="text-muted-foreground hover:text-foreground">
+                <Link href="/events" className="text-muted-foreground hover:text-foreground">
                   Activities
                 </Link>
               </li>
+                <li>
+                <Link href="/contact" className="text-muted-foreground hover:text-foreground">
+                  Contact
+                </Link>
+              </li>
               <li>
-                <Link href="#donate" className="text-muted-foreground hover:text-foreground">
+                <Link href="/blog" className="text-muted-foreground hover:text-foreground">
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link href="/donate" className="text-muted-foreground hover:text-foreground">
                   Donate
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-muted-foreground hover:text-foreground">
-                  Contact
+                <Link href="/volunteer" className="text-muted-foreground hover:text-foreground">
+                  Volunteer
                 </Link>
               </li>
             </ul>
