@@ -41,7 +41,7 @@ export function AboutHero() {
             className="relative aspect-video overflow-hidden rounded-lg md:aspect-auto md:h-full"
           >
             <img
-              src="/placeholder.svg?height=600&width=800"
+              src="/DAAF_Logo-2.png"
               alt="DAAF team members working in the community"
               className="h-full w-full object-cover"
             />
