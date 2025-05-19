@@ -89,7 +89,7 @@ export function ContactSection() {
                     <p className="text-muted-foreground">DaafDoA@gmail.com</p>
                   </div>
                 </div>
-                
+
               </CardContent>
             </Card>
 
@@ -99,7 +99,6 @@ export function ContactSection() {
               </CardHeader>
               <CardContent className="aspect-video overflow-hidden rounded-md">
                 <div className="h-full w-full bg-muted">
-                  <p className="mb-2 bg-[#fff]">No. 60 Dennis Osadebay Way, Asaba</p>
                   <iframe
                     className="w-full h-full border-none"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.163614373583!2d6.735936314753759!3d6.210893995498464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1042f0b2e2b7c0d1%3A0x8a6d2e5e1e5e5e5e!2s60%20Dennis%20Osadebay%20Way%2C%20Asaba%2C%20Delta%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1716040000000!5m2!1sen!2sng"
