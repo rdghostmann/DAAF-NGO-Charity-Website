@@ -23,8 +23,6 @@
 }
 
 
-<<<<<<< HEAD
-=======
 /* GREEN SCHEME  */
 /* @layer base {
   :root {
@@ -95,7 +93,6 @@ html {
 
 /* DARK SCHEME  */
 
->>>>>>> e725df5 (Reinitialize repo after corruption)
 
 /* @layer base {
   :root {
@@ -166,11 +163,8 @@ html {
 
 
 
-<<<<<<< HEAD
-=======
 /* BLUE SCHEME  */
 
->>>>>>> e725df5 (Reinitialize repo after corruption)
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -235,8 +229,5 @@ html {
 html {
   scroll-behavior: smooth;
 }
-<<<<<<< HEAD
-=======
 
 
->>>>>>> e725df5 (Reinitialize repo after corruption)

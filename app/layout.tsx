@@ -7,22 +7,12 @@ import { Footer } from "@/components/footer";
 import { cn } from "@/lib/utils";
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> e725df5 (Reinitialize repo after corruption)
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Diocese of Asaba Agape Foundation (DAAF) - Touching Lives",
-<<<<<<< HEAD
-  description:
-    "A humanitarian and sustainable development organization rooted in the Diocese of Asaba, Anglican Communion in Nigeria.",
-    generator: 'RdTechSolutions',
-=======
-  description: "A humanitarian and sustainable development organization rooted in the Diocese of Asaba, Anglican Communion in Nigeria.",
+  description:"A humanitarian and sustainable development organization rooted in the Diocese of Asaba, Anglican Communion in Nigeria.",
   generator: 'RdTechSolutions',
->>>>>>> e725df5 (Reinitialize repo after corruption)
 };
 
 export default function RootLayout({
