@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import CountUp from "react-countup"
 
 export function AboutHero() {
   return (
@@ -26,11 +27,15 @@ export function AboutHero() {
               </div>
               <div className="flex items-center gap-2">
                 <div className="h-1 w-12 bg-primary"></div>
-                <span className="text-sm font-medium">1000+ Lives Impacted</span>
+                <span className="text-sm font-medium">
+                  <CountUp end={1000} duration={2} separator="," />+ Lives Impacted
+                </span>
               </div>
               <div className="flex items-center gap-2">
                 <div className="h-1 w-12 bg-primary"></div>
-                <span className="text-sm font-medium">5+ Active Programs</span>
+                <span className="text-sm font-medium">
+                  <CountUp end={5} duration={2} />+ Active Programs
+                </span>
               </div>
             </div>
           </motion.div>
