@@ -15,9 +15,9 @@ export function ContactInfo() {
       icon: <Phone className="h-8 w-8 text-primary" />,
       title: "Phone Numbers",
       details: [
-        "Rt. Revd Kingsley Obuh: +2347066898778",
-        "Revd. Canon Prosper Okoh: +23480837518260",
-        "Lady Patience Ogbewe: +2347037706308",
+        "Rt. Revd Kingsley Obuh: ",
+        "Revd. Canon Prosper Okoh: ",
+        "Lady Patience Ogbewe: ",
       ],
     },
     {
