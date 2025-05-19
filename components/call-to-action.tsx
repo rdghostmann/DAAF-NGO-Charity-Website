@@ -28,7 +28,7 @@ export function CallToAction() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="h-12 border-white px-8 text-white hover:bg-white/10"
+                className="h-12 border-white px-8 text-blue-500 hover:bg-white"
               >
                 <Link href="/volunteer">Become a Volunteer</Link>
               </Button>

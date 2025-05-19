@@ -29,9 +29,17 @@ export function MainNav() {
       <div className="container mx-auto flex h-24 gap-x-5 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
+<<<<<<< HEAD
             <div className="relative p-0.5 flex h-20 w-20 items-center justify-center overflow-hidden rounded-full">
               {/* <div className="absolute inset-0 flex items-center justify-center rounded-full bg-primary/50"> */}
               <Image src={Logo} alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full" />
+=======
+            <div className="relative p-0.5 border-2 border-blue-500 flex h-20 w-20 items-center justify-center overflow-hidden rounded-full">
+              {/* <div className="absolute inset-0 flex items-center justify-center rounded-full bg-primary/50"> */}
+              {/* <Image src={Logo} alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full" priority/> */}
+              <img src="./logo.png" alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full" />
+              
+>>>>>>> e725df5 (Reinitialize repo after corruption)
 
             </div>
             {/* <span className="text-2xl font-bold text-primary">DAAF</span>
