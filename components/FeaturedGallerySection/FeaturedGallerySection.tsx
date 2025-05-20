@@ -12,7 +12,7 @@ import Autoplay from "embla-carousel-autoplay"
 
 const featuredPhotos = [
   {
-    src: "/elderly-care-ministry-1.png",
+    src: "/elderly-care-ministry-2.png",
     alt: "Elderly Care Ministry",
   },
   {
@@ -22,6 +22,10 @@ const featuredPhotos = [
   {
     src: "/health-care-services-3.png",
     alt: "Balm of Gilead Hospital",
+  },
+  {
+    src: "/st-barnabas-orphanage-6.png",
+    alt: "St. Barnabas Orphanage Home",
   },
   {
     src: "/food-security.png",
