@@ -36,7 +36,7 @@ export function PhotoGallery({ galleries, className }: PhotoGalleryProps) {
   }
 
   return (
-    <div className={cn("space-y-12", className)}>
+    <div className={cn("container mx-auto space-y-12", className)}>
       {galleries.map((gallery) => (
         <div key={gallery.id} className="space-y-4">
           <div className="space-y-2">

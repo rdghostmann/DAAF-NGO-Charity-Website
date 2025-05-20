@@ -123,11 +123,6 @@ const galleryData = [
         src: "/food-security.png",
         alt: "Ewulu Integrated Farm - 1",
       },
-      {
-        id: "ewulu-2",
-        src: "/food-security.jpg",
-        alt: "Ewulu Integrated Farm - 2",
-      },
     ],
   },
   {
@@ -137,13 +132,23 @@ const galleryData = [
     images: [
       {
         id: "correctional-1",
-        src: "/health-care-8.png",
+        src: "/correctional-center-1.png",
         alt: "Correctional Center Ministry - 1",
       },
       {
         id: "correctional-2",
-        src: "/correctional-center-1.png",
+        src: "/correctional-center-2.png",
         alt: "Correctional Center Ministry - 2",
+      },
+      {
+        id: "correctional-3",
+        src: "/correctional-center-3.png",
+        alt: "Correctional Center Ministry - 3",
+      },
+      {
+        id: "correctional-4",
+        src: "/health-care-5.png",
+        alt: "Correctional Center Ministry - 4",
       },
     ],
   },
@@ -176,7 +181,7 @@ const galleryData = [
       },
       {
         id: "hospitality-2",
-        src: "/food-security.jpg",
+        src: "/food-security.png",
         alt: "Hospitality and Prison Visitation - 2",
       },
     ],
