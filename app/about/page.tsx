@@ -5,6 +5,7 @@ import { HistorySection } from "@/components/history-section"
 import { PartnersSection } from "@/components/partners-section"
 import { CallToAction } from "@/components/call-to-action"
 import { ObjectivesSection } from "@/components/objectives-section"
+import { CallToActionWithProfile } from "@/components/CallToActionWithProfile"
 
 export default function AboutPage() {
   return (
@@ -12,6 +13,7 @@ export default function AboutPage() {
       <AboutHero />
       <AboutMission />
       <ObjectivesSection />
+      <CallToActionWithProfile />
       <HistorySection />
       <TeamSection />
       <PartnersSection />

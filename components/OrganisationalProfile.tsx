@@ -24,11 +24,10 @@ const OrganisationalProfile: React.FC = () => (
       </p>
       <p>
         <strong>Contact:</strong><br />
-        Email: <a href="mailto:asabaagapefoundation@gmail.com">asabaagapefoundation@gmail.com</a><br />
+        Email: <a href="mailto:DaafDoA@gmail.com">DaafDoA@gmail.com</a><br />
         Phone: +234 803 409 8032, +234 803 409 8033
       </p>
     </section>
-
     <section>
       <h3>3. Year of Establishment</h3>
       <p>2018</p>
