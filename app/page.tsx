@@ -209,17 +209,6 @@ export default function Home() {
       <StatsSection />
       <ObjectivesSection />
       <ActivitiesSection />
-      {/* <div className="container mx-auto py-10">
-        <div className="space-y-4 text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight">Photo Gallery</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Explore our collection of stunning photography across various categories
-          </p>
-        </div>
-        <Suspense fallback={<div>Loading...</div>}>
-          <PhotoGallery galleries={galleryData} />
-        </Suspense>
-      </div> */}
       <FeaturedGallerySection />
       <TestimonialsSection />
       <DonateSection />

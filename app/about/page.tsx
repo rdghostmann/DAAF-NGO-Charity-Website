@@ -6,11 +6,13 @@ import { PartnersSection } from "@/components/partners-section"
 import { CallToAction } from "@/components/call-to-action"
 import { ObjectivesSection } from "@/components/objectives-section"
 import { CallToActionWithProfile } from "@/components/CallToActionWithProfile"
+import AboutDaaf from "@/components/about-daaf"
 
 export default function AboutPage() {
   return (
     <main>
       <AboutHero />
+      <AboutDaaf />
       <AboutMission />
       <ObjectivesSection />
       <CallToActionWithProfile />

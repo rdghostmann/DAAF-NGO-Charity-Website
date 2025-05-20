@@ -22,13 +22,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background antialiased", inter.className)}>        <ThemeProvider attribute="class" defaultTheme="light">
-        <div className="relative flex min-h-screen flex-col">
-          <MainNav />
-          <div className="flex-1">{children}</div>
-          <Footer />
-        </div>
-      </ThemeProvider>
+      <body className={cn("min-h-screen bg-background antialiased", inter.className)}>
+        <ThemeProvider attribute="class" defaultTheme="light">
+          <div className="relative flex min-h-screen flex-col">
+            <MainNav />
+            <div className="flex-1">{children}</div>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -75,8 +75,8 @@ export function FeaturedGallerySection() {
             ))}
           </CarouselContent>
           <div className="flex justify-center gap-2 mt-4">
-            <CarouselPrevious />
-            <CarouselNext />
+            {/* <CarouselPrevious /> */}
+            {/* <CarouselNext /> */}
           </div>
         </Carousel>
       </div>
