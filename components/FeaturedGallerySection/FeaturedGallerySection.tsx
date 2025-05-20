@@ -1,11 +1,18 @@
-// Add this section where you want the featured photos to appear, e.g. before the full gallery section
-
+"use client"
 import Link from "next/link"
 import Image from "next/image"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import Autoplay from "embla-carousel-autoplay"
 
 const featuredPhotos = [
   {
-    src: "/elderly-care-ministry-1-1.png",
+    src: "/elderly-care-ministry-1.png",
     alt: "Elderly Care Ministry",
   },
   {
@@ -31,19 +38,43 @@ export function FeaturedGallerySection() {
           A glimpse into our impact and activities. See more in our full gallery!
         </p>
       </div>
-      <div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 mb-8">
-        {featuredPhotos.map((photo, idx) => (
-          <div key={idx} className="overflow-hidden rounded-lg shadow hover:shadow-lg transition">
-            <Image
-              src={photo.src}
-              alt={photo.alt}
-              width={400}
-              height={300}
-              className="w-full h-56 object-cover"
-            />
-            <div className="p-2 text-center text-sm font-medium">{photo.alt}</div>
+      <div className="mb-8">
+        <Carousel
+          plugins={[
+            Autoplay({
+              delay: 3000,
+            }),
+          ]}
+          opts={{
+            align: "center",
+            loop: true,
+          }}
+          className="w-full max-w-2xl mx-auto"
+        >
+          <CarouselContent>
+            {featuredPhotos.map((photo, idx) => (
+              <CarouselItem
+                key={idx}
+                className="basis-1/2 flex flex-col items-center"
+              >
+                <div className="overflow-hidden rounded-lg shadow hover:shadow-lg transition w-full">
+                  <Image
+                    src={photo.src}
+                    alt={photo.alt}
+                    width={400}
+                    height={300}
+                    className="w-full h-56 object-cover"
+                  />
+                  <div className="p-2 text-center text-sm font-medium">{photo.alt}</div>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <div className="flex justify-center gap-2 mt-4">
+            <CarouselPrevious />
+            <CarouselNext />
           </div>
-        ))}
+        </Carousel>
       </div>
       <div className="text-center">
         <Link href="/our-gallery">
