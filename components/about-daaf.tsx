@@ -57,91 +57,6 @@ export default function AboutDaaf() {
         </motion.div>
       </section>
 
-      {/* Our Mission Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-white to-slate-50">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true, margin: "-100px" }}
-          className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
-        >
-          <div className="order-2 md:order-1">
-            <motion.div
-              initial={{ x: -50, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              <div className="flex items-center mb-4">
-                <Target className="h-8 w-8 text-slate-700 mr-3" />
-                <h2 className="text-3xl font-bold text-slate-800">Our Mission</h2>
-              </div>
-              <p className="text-lg text-slate-600 mb-6">
-                "To serve and empower individuals, families, and communities in the Diocese of Asaba and beyond, through
-                education, healthcare, food security, economic empowerment, social services and spiritual growth
-                initiatives, while promoting values of compassion, justice, and inclusivity."
-              </p>
-            </motion.div>
-          </div>
-          <motion.div
-            className="order-1 md:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
-            initial={{ scale: 0.9, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <Image
-              src="/our-mission.png"
-              alt="Our mission illustration"
-              fill
-              className="object-cover"
-            />
-          </motion.div>
-        </motion.div>
-      </section>
-
-      {/* Our Vision Section */}
-      <section className="py-24 px-4 bg-slate-50">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true, margin: "-100px" }}
-          className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
-        >
-          <motion.div
-            className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
-            initial={{ scale: 0.9, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <Image
-              src="/our-vision.png "
-              alt="Our vision illustration"
-              fill
-              className="object-cover"
-            />
-          </motion.div>
-          <motion.div
-            initial={{ x: 50, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <div className="flex items-center mb-4">
-              <Lightbulb className="h-8 w-8 text-slate-700 mr-3" />
-              <h2 className="text-3xl font-bold text-slate-800">Our Vision</h2>
-            </div>
-            <p className="text-lg text-slate-600 mb-6">
-              To be a leading catalyst for positive change, fostering hope, dignity and self-sufficiency among
-              individuals and communities while reflecting the love and compassion of God through holistic development
-              and service.
-            </p>
-          </motion.div>
-        </motion.div>
-      </section>
 
       {/* Our About DAAF Section */}
       <section className="py-24 px-4 bg-gradient-to-b from-white to-slate-50">
@@ -202,6 +117,93 @@ export default function AboutDaaf() {
           </motion.div>
         </motion.div>
       </section>
+      {/* Our Vision Section */}
+      <section className="py-24 px-4 bg-slate-50">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
+        >
+          <motion.div
+            className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="/our-vision.png "
+              alt="Our vision illustration"
+              fill
+              className="object-cover"
+            />
+          </motion.div>
+          <motion.div
+            initial={{ x: 50, opacity: 0 }}
+            whileInView={{ x: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex items-center mb-4">
+              <Lightbulb className="h-8 w-8 text-slate-700 mr-3" />
+              <h2 className="text-3xl font-bold text-slate-800">Our Vision</h2>
+            </div>
+            <p className="text-lg text-slate-600 mb-6">
+              To be a leading catalyst for positive change, fostering hope, dignity and self-sufficiency among
+              individuals and communities while reflecting the love and compassion of God through holistic development
+              and service.
+            </p>
+          </motion.div>
+        </motion.div>
+      </section>
+      {/* Our Mission Section */}
+      <section className="py-24 px-4 bg-gradient-to-b from-white to-slate-50">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
+        >
+          <div className="order-2 md:order-1">
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center mb-4">
+                <Target className="h-8 w-8 text-slate-700 mr-3" />
+                <h2 className="text-3xl font-bold text-slate-800">Our Mission</h2>
+              </div>
+              <p className="text-lg text-slate-600 mb-6">
+                "To serve and empower individuals, families, and communities in the Diocese of Asaba and beyond, through
+                education, healthcare, food security, economic empowerment, social services and spiritual growth
+                initiatives, while promoting values of compassion, justice, and inclusivity."
+              </p>
+            </motion.div>
+          </div>
+          <motion.div
+            className="order-1 md:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="/our-mission.png"
+              alt="Our mission illustration"
+              fill
+              className="object-cover"
+            />
+          </motion.div>
+        </motion.div>
+      </section>
+
+
+
       {/* About Us Section */}
       <section className="py-24 px-4 bg-gradient-to-b from-slate-50 to-white">
         <motion.div
