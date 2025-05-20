@@ -11,7 +11,6 @@ import AboutDaaf from "@/components/about-daaf"
 export default function AboutPage() {
   return (
     <main>
-      <AboutHero />
       <AboutDaaf />
       <AboutMission />
       <ObjectivesSection />

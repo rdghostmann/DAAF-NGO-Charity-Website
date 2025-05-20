@@ -18,32 +18,36 @@ export function Footer() {
           {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Quick Links</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/" className="text-muted-foreground hover:text-foreground">Home</Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-muted-foreground hover:text-foreground">About Us</Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-muted-foreground hover:text-foreground">Our Objectives</Link>
-              </li>
-              <li>
-                <Link href="/events" className="text-muted-foreground hover:text-foreground">Activities</Link>
-              </li>
-              <li>
+            <div className="flex items-center justify-between space-y-2 space-x-2 text-sm">
+              <div>
+                <div>
+                  <Link href="/" className="text-muted-foreground hover:text-foreground">Home</Link>
+                </div>
+                <div>
+                  <Link href="/about" className="text-muted-foreground hover:text-foreground">About Us</Link>
+                </div>
+                <div>
+                  <Link href="/about" className="text-muted-foreground hover:text-foreground">Our Objectives</Link>
+                </div>
+                <div>
+                  <Link href="/events" className="text-muted-foreground hover:text-foreground">Activities</Link>
+                </div>
+              </div>
+              <div>
+                <div>
                 <Link href="/contact" className="text-muted-foreground hover:text-foreground">Contact</Link>
-              </li>
-              <li>
+              </div>
+              <div>
                 <Link href="/blog" className="text-muted-foreground hover:text-foreground">Blog</Link>
-              </li>
-              <li>
+              </div>
+              <div>
                 <Link href="/donate" className="text-muted-foreground hover:text-foreground">Donate</Link>
-              </li>
-              <li>
+              </div>
+              <div>
                 <Link href="/volunteer" className="text-muted-foreground hover:text-foreground">Volunteer</Link>
-              </li>
-            </ul>
+              </div>
+              </div>
+            </div>
           </div>
 
           {/* Programs */}
@@ -85,7 +89,7 @@ export function Footer() {
 
               {/* Inline Social Icons */}
               <div className="flex gap-4 pt-4">
-                
+
                 <Link href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
                   <Facebook className="h-5 w-5 text-blue-300  hover:text-blue-600" />
                 </Link>

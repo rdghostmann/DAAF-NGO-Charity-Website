@@ -5,6 +5,7 @@ import Image from "next/image"
 import { motion, useScroll } from "framer-motion"
 import { ChevronLeft, ChevronRight, Users, Lightbulb, Target } from "lucide-react"
 import Link from "next/link"
+import CountUp from "react-countup"
 
 export default function AboutDaaf() {
   const containerRef = useRef(null)
@@ -142,6 +143,65 @@ export default function AboutDaaf() {
         </motion.div>
       </section>
 
+      {/* Our About DAAF Section */}
+      <section className="py-24 px-4 bg-gradient-to-b from-white to-slate-50">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
+          className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
+        >
+          <div className="order-2 md:order-1">
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center mb-4">
+                <Target className="h-8 w-8 text-slate-700 mr-3" />
+                <h2 className="text-3xl font-bold text-slate-800">About DAAF</h2>
+              </div>
+              <p className="text-lg text-slate-600 mb-6">
+                Learn about our mission, vision, and the impact we're making in communities across Nigeria.
+              </p>
+              <div className="flex flex-wrap gap-4">
+                <div className="flex items-center gap-2">
+                  <div className="h-1 w-12 bg-primary"></div>
+                  <span className="text-sm font-medium">Est. 2008</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1 w-12 bg-primary"></div>
+                  <span className="text-sm font-medium">
+                    <CountUp end={1000} duration={2} separator="," />+ Lives Impacted
+                  </span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="h-1 w-12 bg-primary"></div>
+                  <span className="text-sm font-medium">
+                    <CountUp end={5} duration={2} />+ Active Programs
+                  </span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+          <motion.div
+            className="order-1 md:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
+            initial={{ scale: 0.9, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <Image
+              src="/DAAF_Logo-2.png"
+              alt="About DAAF"
+              fill
+              className="object-cover"
+            />
+          </motion.div>
+        </motion.div>
+      </section>
       {/* About Us Section */}
       <section className="py-24 px-4 bg-gradient-to-b from-slate-50 to-white">
         <motion.div
@@ -173,7 +233,7 @@ export default function AboutDaaf() {
               growth.
             </p>
           </motion.div>
-        
+
         </motion.div>
       </section>
 
@@ -333,24 +393,24 @@ export default function AboutDaaf() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/donate">
-            <motion.button
-              className="bg-white text-slate-900 px-8 py-3 rounded-full text-lg font-medium hover:bg-slate-100 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Donate Now
-            </motion.button>
+              <motion.button
+                className="bg-white text-slate-900 px-8 py-3 rounded-full text-lg font-medium hover:bg-slate-100 transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Donate Now
+              </motion.button>
             </Link>
             <Link href="/volunteer">
-            <motion.button
-              className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-white/10 transition-colors"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Volunteer With Us
-            </motion.button>
+              <motion.button
+                className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full text-lg font-medium hover:bg-white/10 transition-colors"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Volunteer With Us
+              </motion.button>
             </Link>
-            
+
           </div>
         </motion.div>
       </section>

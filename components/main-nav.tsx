@@ -38,7 +38,8 @@ export function MainNav() {
           </motion.div>
         </Link>
         <nav className="hidden gap-6 md:flex">
-          {["Home", "About", "Causes", "Events", "Volunteer", "Blog", "Donate", "Contact"].map((item, index) => (
+          {/* {["Home", "About", "Causes", "Events", "Volunteer", "Blog", "Donate", "Contact"].map((item, index) => ( */}
+          {["Home", "About", "Causes", "Volunteer", "Donate", "Contact"].map((item, index) => (
             <motion.div
               key={item}
               initial={{ opacity: 0, y: -10 }}
@@ -77,7 +78,8 @@ export function MainNav() {
                   <span className="text-xl font-bold text-primary">DAAF</span>
                 </Link>
                 <nav className="flex flex-col gap-4">
-                  {["Home", "About", "Causes", "Events", "Volunteer", "Blog", "Donate", "Contact"].map((item) => (
+                  {/* {["Home", "About", "Causes", "Events", "Volunteer", "Blog", "Donate", "Contact"].map((item) => ( */}
+                  {["Home", "About", "Causes", "Volunteer", "Donate", "Contact"].map((item) => (
                     <Link
                       key={item}
                       href={item.toLowerCase() === "home" ? "/" : `/${item.toLowerCase()}`}
