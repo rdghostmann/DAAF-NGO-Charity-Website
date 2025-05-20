@@ -76,7 +76,10 @@ export function DonateSection() {
                         <Input id="custom-amount" type="number" placeholder="Enter amount" className="pl-8" />
                       </div>
                     </div>
+<<<<<<< HEAD
                     
+=======
+>>>>>>> refs/remotes/origin/main
                   </div>
                 </TabsContent>
                 <TabsContent value="monthly" className="pt-6">

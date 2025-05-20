@@ -1,19 +1,8 @@
-import { HeroSection } from "@/components/hero-section"
-import { AboutSection } from "@/components/about-section"
-import { ObjectivesSection } from "@/components/objectives-section"
-import { ActivitiesSection } from "@/components/activities-section"
-import { DonateSection } from "@/components/donate-section"
-import { TestimonialsSection } from "@/components/testimonials-section"
-import { ContactSection } from "@/components/contact-section"
-import { StatsSection } from "@/components/stats-section"
 import { PhotoGallery } from "@/components/photo-gallery"
-import { Suspense } from "react"
-import { FeaturedGallerySection } from "@/components/FeaturedGallerySection/FeaturedGallerySection"
-
 
 // Sample gallery data
 const galleryData = [
-  {
+ {
     id: "elder-care",
     title: "Elderly Care Ministry",
     description: "Supporting and caring for the elderly in our community with dignity and respect.",
@@ -197,33 +186,20 @@ const galleryData = [
       },
     ],
   },
-
+ 
 ]
 
-
-export default function Home() {
+export default function GalleryPage() {
   return (
-    <main>
-      <HeroSection />
-      <AboutSection />
-      <StatsSection />
-      <ObjectivesSection />
-      <ActivitiesSection />
-      {/* <div className="container mx-auto py-10">
-        <div className="space-y-4 text-center mb-12">
-          <h1 className="text-4xl font-bold tracking-tight">Photo Gallery</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Explore our collection of stunning photography across various categories
-          </p>
-        </div>
-        <Suspense fallback={<div>Loading...</div>}>
-          <PhotoGallery galleries={galleryData} />
-        </Suspense>
-      </div> */}
-      <FeaturedGallerySection />
-      <TestimonialsSection />
-      <DonateSection />
-      <ContactSection />
-    </main>
+    <div className="container mx-auto py-10">
+      <div className="space-y-4 text-center mb-12">
+        <h1 className="text-4xl font-bold tracking-tight">Photo Gallery</h1>
+        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+          Explore our collection of stunning photography across various categories
+        </p>
+      </div>
+
+      <PhotoGallery galleries={galleryData} />
+    </div>
   )
 }

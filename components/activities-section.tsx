@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Heart, Users, Home, BookOpen, Stethoscope } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export function ActivitiesSection() {
   const activities = [
@@ -35,14 +36,14 @@ export function ActivitiesSection() {
       title: "Food Security - Ewulu Integrated Farm",
       description: "Promoting sustainable agriculture and food security through our integrated farm.",
       icon: <BookOpen className="h-6 w-6" />,
-      image: "/food-security.jpg",
+      image: "/food-security.png",
     },
     {
       id: "healthcare",
       title: "Health Care Services – Balm of Gilead Hospital",
       description: "Providing quality healthcare services to those in need through our hospital.",
       icon: <Stethoscope className="h-6 w-6" />,
-      image: "/health-care-services-1.jpg",
+      image: "/health-care-services-1.png",
     },
   ]
 
@@ -61,7 +62,6 @@ export function ActivitiesSection() {
             Explore the various programs and initiatives through which we serve and empower our community.
           </p>
         </motion.div>
-
         <Tabs defaultValue="elderly" className="mx-auto max-w-4xl">
           <TabsList className="mb-8 grid w-full grid-cols-2 gap-2 md:grid-cols-5">
             {activities.map((activity) => (
