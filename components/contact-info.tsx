@@ -9,7 +9,7 @@ export function ContactInfo() {
     {
       icon: <MapPin className="h-8 w-8 text-primary" />,
       title: "Our Address",
-      details: ["Bishopscourt, 60 Dennis Osadebay Way,", "P.O. Box 216, Asaba, Delta State, Nigeria"],
+      details: ["Bishopscourt, 60 Dennis Osadebay Way, P.O. Box 216, Asaba, Delta State, Nigeria"],
     },
     {
       icon: <Phone className="h-8 w-8 text-primary" />,

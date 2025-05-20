@@ -225,8 +225,7 @@ export default function AboutDaaf() {
               <h2 className="text-3xl font-bold text-slate-800">About Us</h2>
             </div>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-4">
-              The Diocese of Asaba Agape Foundation is a humanitarian and sustainable development organization rooted in
-              the Diocese of Asaba, Anglican Communion in Nigeria. Over the years the Diocese has impacted on people's
+            Over the years the Diocese has impacted on people's
               lives particularly the vulnerable persons including the orphans in the society.
             </p>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">

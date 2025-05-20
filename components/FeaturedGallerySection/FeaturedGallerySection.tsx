@@ -83,7 +83,7 @@ export function FeaturedGallerySection() {
       <div className="text-center">
         <Link href="/our-gallery">
           <button className="inline-block rounded bg-primary px-6 py-2 text-white font-semibold hover:bg-primary/90 transition">
-            View All Photos
+            View Gallery
           </button>
         </Link>
       </div>

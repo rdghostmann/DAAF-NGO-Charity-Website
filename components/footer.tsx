@@ -29,7 +29,7 @@ export function Footer() {
           {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Quick Links</h3>
-            <div className="flex items-center space-y-2 space-x-10 text-sm">
+            <div className="flex items-center space-x-10 text-sm">
               <div className="flex flex-col space-y-2">
                 <div>
                   <Link href="/" className="text-muted-foreground hover:text-foreground">Home</Link>
