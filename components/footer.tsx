@@ -1,5 +1,16 @@
 import Link from "next/link"
-import { Heart, Mail, Facebook, Instagram } from "lucide-react"
+import { Heart, Mail } from "lucide-react"
+import { RiFacebookFill } from "react-icons/ri";
+import { RiTwitterFill } from "react-icons/ri";
+import { RiInstagramFill } from "react-icons/ri";
+import { RiTiktokFill } from "react-icons/ri";
+import { RiWhatsappFill } from "react-icons/ri";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdCall } from "react-icons/md";
+
+
+
+
 
 export function Footer() {
   return (
@@ -18,8 +29,8 @@ export function Footer() {
           {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Quick Links</h3>
-            <div className="flex items-center justify-between space-y-2 space-x-2 text-sm">
-              <div>
+            <div className="flex items-center space-y-2 space-x-10 text-sm">
+              <div className="flex flex-col space-y-2">
                 <div>
                   <Link href="/" className="text-muted-foreground hover:text-foreground">Home</Link>
                 </div>
@@ -33,19 +44,19 @@ export function Footer() {
                   <Link href="/events" className="text-muted-foreground hover:text-foreground">Activities</Link>
                 </div>
               </div>
-              <div>
+              <div className="flex flex-col space-y-2">
                 <div>
-                <Link href="/contact" className="text-muted-foreground hover:text-foreground">Contact</Link>
-              </div>
-              <div>
-                <Link href="/blog" className="text-muted-foreground hover:text-foreground">Blog</Link>
-              </div>
-              <div>
-                <Link href="/donate" className="text-muted-foreground hover:text-foreground">Donate</Link>
-              </div>
-              <div>
-                <Link href="/volunteer" className="text-muted-foreground hover:text-foreground">Volunteer</Link>
-              </div>
+                  <Link href="/contact" className="text-muted-foreground hover:text-foreground">Contact</Link>
+                </div>
+                <div>
+                  <Link href="/blog" className="text-muted-foreground hover:text-foreground">Blog</Link>
+                </div>
+                <div>
+                  <Link href="/donate" className="text-muted-foreground hover:text-foreground">Donate</Link>
+                </div>
+                <div>
+                  <Link href="/volunteer" className="text-muted-foreground hover:text-foreground">Volunteer</Link>
+                </div>
               </div>
             </div>
           </div>
@@ -79,22 +90,49 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="text-lg font-bold">Contact</h3>
             <address className="not-italic text-sm text-muted-foreground space-y-2">
-              <p>Bishopscourt, 60 Dennis Osadebay Way,</p>
-              <p>P.O. Box 216, Asaba, Delta State, Nigeria</p>
-              <p>Phone: </p>
-              <p className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-red-300" />
-                <a href="mailto:DaafDoA@gmail.com" className="hover:text-foreground">DaafDoA@gmail.com</a>
-              </p>
-
+              <div className="flex items-start gap-2">
+                <FaLocationDot className="mt-1 h-5 w-5 text-primary" />
+                <div>
+                  Bishopscourt, 60 Dennis Osadebay Way,<br />
+                  P.O. Box 216, Asaba, Delta State, Nigeria
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <MdCall className="h-5 w-5 text-primary" />
+                <span>+2348030299990</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="h-5 w-5 text-primary" />
+                <a href="mailto:DaafDoA@gmail.com" className="hover:text-primary underline underline-offset-2 transition">
+                  DaafDoA@gmail.com
+                </a>
+              </div>
               {/* Inline Social Icons */}
-              <div className="flex gap-4 pt-4">
-
-                <Link href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer">
-                  <Facebook className="h-5 w-5 text-blue-300  hover:text-blue-600" />
+              <div className="flex gap-3 pt-4 justify-start">
+                <Link href="https://www.facebook.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                  <span className="flex items-center justify-center rounded-full border bg-blue-100 h-9 w-9 hover:bg-blue-600 transition">
+                    <RiFacebookFill className="h-5 w-5 text-blue-600 hover:text-white transition" />
+                  </span>
                 </Link>
-                <Link href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer" >
-                  <Instagram className="h-5 w-5 text-violet-300 hover:text-pink-500" />
+                <Link href="https://twitter.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                  <span className="flex items-center justify-center rounded-full border bg-sky-100 h-9 w-9 hover:bg-sky-500 transition">
+                    <RiTwitterFill className="h-5 w-5 text-sky-400 hover:text-white transition" />
+                  </span>
+                </Link>
+                <Link href="https://www.instagram.com/yourpage" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                  <span className="flex items-center justify-center rounded-full border bg-pink-100 h-9 w-9 hover:bg-pink-500 transition">
+                    <RiInstagramFill className="h-5 w-5 text-pink-500 hover:text-white transition" />
+                  </span>
+                </Link>
+                <Link href="https://www.tiktok.com/@yourpage" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                  <span className="flex items-center justify-center rounded-full border bg-gray-200 h-9 w-9 hover:bg-black transition">
+                    <RiTiktokFill className="h-5 w-5 text-black hover:text-white transition" />
+                  </span>
+                </Link>
+                <Link href="https://wa.me/234XXXXXXXXXX" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                  <span className="flex items-center justify-center rounded-full border bg-green-100 h-9 w-9 hover:bg-green-500 transition">
+                    <RiWhatsappFill className="h-5 w-5 text-green-500 hover:text-white transition" />
+                  </span>
                 </Link>
               </div>
             </address>
