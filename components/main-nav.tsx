@@ -38,7 +38,7 @@ export function MainNav() {
           </motion.div>
         </Link>
         <nav className="hidden gap-6 md:flex">
-          {["Home", "About", "Causes", "Events", "Volunteer", "Blog", "Donate", "Contact"].map((item, index) => (
+          {["Home", "About", "Causes", "Events", "Volunteer", "Blog", "Donate", "Contact", "Our-Gallery"].map((item, index) => (
             <motion.div
               key={item}
               initial={{ opacity: 0, y: -10 }}
