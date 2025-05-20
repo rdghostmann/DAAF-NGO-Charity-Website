@@ -99,7 +99,7 @@ export function Footer() {
               <p>Bishopscourt, 60 Dennis Osadebay Way,</p>
               <p>P.O. Box 216, Asaba, Delta State, Nigeria</p>
               <p className="mt-2">Email: DaafDoA@gmail.com</p>
-              <p>Phone: +2347066898778</p>
+              <p>Phone: </p>
             </address>
           </div>
         </div>
