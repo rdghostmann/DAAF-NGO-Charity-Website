@@ -27,7 +27,7 @@ const AccountDetail1 = () => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="w-full max-w-3xl mx-auto"
+      className="w-full max-w-3xl mx-auto py-5"
     >
       <Card className="border-2 border-slate-200 shadow-lg overflow-hidden">
         <div className="flex flex-col md:flex-row items-stretch">
@@ -45,12 +45,11 @@ const AccountDetail1 = () => {
               <CardDescription>Banking details for donations and contributions</CardDescription>
             </CardHeader>
             <CardContent className="p-0 flex flex-col gap-4">
-              <div className="flex flex-col md:flex-row md:items-center md:gap-8">
+              <div className="flex flex-col gap-6">
                 <div>
                   <p className="text-xs font-medium text-slate-500 mb-1">Account Name</p>
                   <p className="text-base font-semibold text-slate-800">{accountInfo.name}</p>
                 </div>
-                <Separator orientation="vertical" className="hidden md:block h-10 mx-4" />
                 <div>
                   <p className="text-xs font-medium text-slate-500 mb-1">Account Number</p>
                   <div className="flex items-center gap-2">
@@ -76,7 +75,6 @@ const AccountDetail1 = () => {
                     </Button>
                   </div>
                 </div>
-                <Separator orientation="vertical" className="hidden md:block h-10 mx-4" />
                 <div>
                   <p className="text-xs font-medium text-slate-500 mb-1">Bank Name</p>
                   <p className="text-base font-semibold text-slate-800">{accountInfo.bank}</p>

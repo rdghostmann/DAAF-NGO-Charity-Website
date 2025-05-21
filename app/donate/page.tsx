@@ -12,7 +12,7 @@ export default function DonatePage() {
       <DonateHero />
       <DonationForm />
       <DonationImpact />
-      <AccountDetail />
+      {/* <AccountDetail /> */}
       <AccountDetail1 />
       <DonationTestimonials />
       <DonationFAQ />
