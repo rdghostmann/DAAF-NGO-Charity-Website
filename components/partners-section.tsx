@@ -6,7 +6,7 @@ export function PartnersSection() {
   const partners = [
     { name: "Anglican Communion", logo: "/anglican-communion.png" },
     { name: "Anglican Communion", logo: "/partner-img1.png" },
-    { name: "Delta State Government", logo: "/partner-img2.png" },
+    { name: "partner-2", logo: "/partner-img2.png" },
     { name: "Delta State Government", logo: "/delta-state-govt.png" },
     { name: "Member Church", logo: "/member-church.png" },
     { name: "UNICEF", logo: "/unicef.png" },
