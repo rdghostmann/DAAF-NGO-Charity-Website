@@ -7,7 +7,6 @@ import { TestimonialsSection } from "@/components/testimonials-section"
 import { ContactSection } from "@/components/contact-section"
 import { StatsSection } from "@/components/stats-section"
 import { PhotoGallery } from "@/components/photo-gallery"
-import { Suspense } from "react"
 import { FeaturedGallerySection } from "@/components/FeaturedGallerySection/FeaturedGallerySection"
 
 

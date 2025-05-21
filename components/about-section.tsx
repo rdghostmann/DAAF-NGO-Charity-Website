@@ -7,7 +7,7 @@ import { Lightbulb, Target } from "lucide-react"
 export function AboutSection() {
   return (
     <section id="about" className="bg-muted/30 py-24">
-      <div className="container px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-6xl">
           {/* Our About DAAF Section */}
           <section className="py-24 px-4 bg-gradient-to-b from-white to-slate-50">
