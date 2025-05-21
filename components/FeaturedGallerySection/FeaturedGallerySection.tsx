@@ -29,7 +29,7 @@ const featuredPhotos = [
   },
   {
     src: "/food-security.png",
-    alt: "Food Security - Ewulu Integrated Farm",
+    alt: "Correctional Center/Hospitality",
   },
 ]
 
