@@ -51,7 +51,7 @@ export function CausesGrid() {
     {
       title: "Education Scholarship Fund",
       description: "Supporting education for underprivileged children in our community.",
-      image: "/st-barnabas-orphanage-6-1.png",
+      image: "st-barnabas-orphanage-6.png",
       raised: 20000,
       goal: 200000,
       progress: 40,
