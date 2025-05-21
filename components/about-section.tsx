@@ -54,7 +54,8 @@ export function AboutSection() {
             </motion.div>
           </section>
           {/* Our Vision Section */}
-          <section className="py-24 px-4 bg-slate-50">
+       <div className="w-full bg-gradient-to-b from-white to-blue-200">
+           <section className="py-24 px-4 ">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -94,6 +95,7 @@ export function AboutSection() {
               </motion.div>
             </motion.div>
           </section>
+       </div>
           {/* Our Mission Section */}
           <section className="py-24 px-4 bg-gradient-to-b from-white to-slate-50">
             <motion.div
