@@ -18,25 +18,11 @@ export function ActivitiesSection() {
       image: "/elderly-care-ministry-2.png",
     },
     {
-      id: "correctional",
-      title: "Correctional Care Health & Hospital Ministries",
-      description: "Providing spiritual and material support to those in correctional facilities and hospitals.",
-      icon: <Heart className="h-6 w-6" />,
-      image: "/correctional-center-1.png",
-    },
-    {
       id: "orphanage",
       title: "St. Barnabas Orphanage Home",
       description: "Providing a loving home and care for orphaned children in our community.",
       icon: <Home className="h-6 w-6" />,
       image: "/st-barnabas-orphanage-3.png",
-    },
-    {
-      id: "farm",
-      title: "Food Security - Ewulu Integrated Farm",
-      description: "Promoting sustainable agriculture and food security through our integrated farm.",
-      icon: <BookOpen className="h-6 w-6" />,
-      image: "/food-security.png",
     },
     {
       id: "healthcare",
@@ -45,6 +31,20 @@ export function ActivitiesSection() {
       icon: <Stethoscope className="h-6 w-6" />,
       image: "/health-care-services-1.png",
     },
+     {
+      id: "farm",
+      title: "Food Security - Ewulu Integrated Farm",
+      description: "Promoting sustainable agriculture and food security through our integrated farm.",
+      icon: <BookOpen className="h-6 w-6" />,
+      image: "/food-security.png",
+    },
+    {
+      id: "correctional",
+      title: "Correctional Care/Hosp. Ministries",
+      description: "Providing spiritual and material support to those in correctional facilities and hospitals.",
+      icon: <Heart className="h-6 w-6" />,
+      image: "/correctional-center-1.png",
+    }
   ]
 
   return (
