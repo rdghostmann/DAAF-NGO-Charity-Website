@@ -239,7 +239,7 @@ export default function AboutDaaf() {
       </section>
 
       {/* Values Section with Parallax */}
-      <section className="py-24 px-4 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-24 px-4 bg-slate-700 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900" />
           <Image
