@@ -134,7 +134,7 @@ export default function AboutDaaf() {
             viewport={{ once: true }}
           >
             <Image
-              src="/our-vision.png "
+              src="/our-vision.png"
               alt="Our vision illustration"
               fill
               className="object-cover"
