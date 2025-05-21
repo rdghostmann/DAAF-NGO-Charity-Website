@@ -4,12 +4,16 @@ import { motion } from "framer-motion"
 
 export function PartnersSection() {
   const partners = [
-    { name: "Anglican Communion", logo: "/placeholder.svg?height=100&width=200" },
-    { name: "Delta State Government", logo: "/placeholder.svg?height=100&width=200" },
-    { name: "UNICEF", logo: "/placeholder.svg?height=100&width=200" },
-    { name: "World Health Organization", logo: "/placeholder.svg?height=100&width=200" },
-    { name: "Local NGO Partner", logo: "/placeholder.svg?height=100&width=200" },
-    { name: "Corporate Sponsor", logo: "/placeholder.svg?height=100&width=200" },
+    { name: "Anglican Communion", logo: "/anglican-communion.png" },
+    { name: "Anglican Communion", logo: "/partner-img1.png" },
+    { name: "Delta State Government", logo: "/partner-img2.png" },
+    { name: "Delta State Government", logo: "/delta-state-govt.png" },
+    { name: "Member Church", logo: "/member-church.png" },
+    { name: "UNICEF", logo: "/unicef.png" },
+    { name: "World Health Organization", logo: "/partner-img3.png" },
+    { name: "World Health Organization", logo: "/united-nations.png" },
+    { name: "Local NGO Partner", logo: "/partner-img4.png" },
+    { name: "Corporate Sponsor", logo: "/partner-img5.png" },
   ]
 
   return (
