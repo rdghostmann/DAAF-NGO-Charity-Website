@@ -54,48 +54,48 @@ export function AboutSection() {
             </motion.div>
           </section>
           {/* Our Vision Section */}
-       <div className="w-full bg-gradient-to-b from-white to-blue-200">
-           <section className="py-24 px-4 ">
-            <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 0.8 }}
-              viewport={{ once: true, margin: "-100px" }}
-              className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
-            >
+          <div className="w-full bg-gradient-to-b from-white to-slate-50">
+            <section className="py-24 px-4">
               <motion.div
-                className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
-                initial={{ scale: 0.9, opacity: 0 }}
-                whileInView={{ scale: 1, opacity: 1 }}
-                transition={{ duration: 0.6 }}
-                viewport={{ once: true }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.8 }}
+                viewport={{ once: true, margin: "-100px" }}
+                className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
               >
-                <Image
-                  src="/our-vision.png "
-                  alt="Our vision illustration"
-                  fill
-                  className="object-cover"
-                />
+                <motion.div
+                  className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
+                  initial={{ scale: 0.9, opacity: 0 }}
+                  whileInView={{ scale: 1, opacity: 1 }}
+                  transition={{ duration: 0.6 }}
+                  viewport={{ once: true }}
+                >
+                  <Image
+                    src="/our-vision.png"
+                    alt="Our vision illustration"
+                    fill
+                    className="object-cover"
+                  />
+                </motion.div>
+                <motion.div
+                  initial={{ x: 50, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="flex items-center mb-4">
+                    <Lightbulb className="h-8 w-8 text-slate-700 mr-3" />
+                    <h2 className="text-3xl font-bold text-slate-800">Our Vision</h2>
+                  </div>
+                  <p className="text-lg text-slate-600 mb-6">
+                    To be a leading catalyst for positive change, fostering hope, dignity and self-sufficiency among
+                    individuals and communities while reflecting the love and compassion of God through holistic development
+                    and service.
+                  </p>
+                </motion.div>
               </motion.div>
-              <motion.div
-                initial={{ x: 50, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                viewport={{ once: true }}
-              >
-                <div className="flex items-center mb-4">
-                  <Lightbulb className="h-8 w-8 text-slate-700 mr-3" />
-                  <h2 className="text-3xl font-bold text-slate-800">Our Vision</h2>
-                </div>
-                <p className="text-lg text-slate-600 mb-6">
-                  To be a leading catalyst for positive change, fostering hope, dignity and self-sufficiency among
-                  individuals and communities while reflecting the love and compassion of God through holistic development
-                  and service.
-                </p>
-              </motion.div>
-            </motion.div>
-          </section>
-       </div>
+            </section>
+          </div>
           {/* Our Mission Section */}
           <section className="py-24 px-4 bg-gradient-to-b from-white to-slate-50">
             <motion.div
