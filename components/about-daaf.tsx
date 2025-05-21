@@ -243,7 +243,7 @@ export default function AboutDaaf() {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900" />
           <Image
-            src="/placeholder.svg?height=1080&width=1920&text="
+            src="/pexels-marte-nyhammer-1117968563-32161313.jpg"
             alt="Background texture"
             fill
             className="object-cover mix-blend-overlay"
