@@ -37,7 +37,7 @@ const AccountDetail1 = () => {
             <div className="bg-white p-4 rounded-full shadow-md mb-4">
               {/* <Bank className="h-12 w-12 text-slate-700" /> */}
               <div className="h-12 w-12 text-slate-700">
-              <Image src="" />
+                <Image src="/zenith-bank.png" alt="zenith-bank" width={866} height={650} />
               </div>
             </div>
             <div className="text-white text-lg font-semibold text-center">Zenith Bank</div>
