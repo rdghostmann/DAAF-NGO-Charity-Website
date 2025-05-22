@@ -134,7 +134,7 @@ export default function AboutDaaf() {
             viewport={{ once: true }}
           >
             <Image
-              src="/our-vision.png "
+              src="/our-vision.png"
               alt="Our vision illustration"
               fill
               className="object-cover"
@@ -239,11 +239,11 @@ export default function AboutDaaf() {
       </section>
 
       {/* Values Section with Parallax */}
-      <section className="py-24 px-4 bg-slate-900 text-white relative overflow-hidden">
+      <section className="py-24 px-4 bg-slate-700 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900" />
           <Image
-            src="/placeholder.svg?height=1080&width=1920&text="
+            src="/pexels-marte-nyhammer-1117968563-32161313.jpg"
             alt="Background texture"
             fill
             className="object-cover mix-blend-overlay"
