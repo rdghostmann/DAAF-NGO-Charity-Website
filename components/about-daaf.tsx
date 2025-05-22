@@ -59,7 +59,7 @@ export default function AboutDaaf() {
 
 
       {/* Our About DAAF Section */}
-      <section className="py-24 px-4 bg-gradient-to-b from-white to-slate-50">
+      <section className="py-24 bg-gradient-to-b from-white to-slate-50">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

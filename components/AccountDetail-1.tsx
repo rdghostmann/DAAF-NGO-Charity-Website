@@ -6,6 +6,7 @@ import { Copy, CheckCircle, BanknoteIcon as Bank } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Separator } from "@/components/ui/separator"
+import Image from "next/image"
 
 const AccountDetail1 = () => {
   const [copied, setCopied] = useState(false)
@@ -34,9 +35,12 @@ const AccountDetail1 = () => {
           {/* Left: Icon and vertical separator */}
           <div className="flex flex-col items-center justify-center bg-gradient-to-b from-slate-700 to-slate-900 p-8 md:w-1/3 min-w-[180px]">
             <div className="bg-white p-4 rounded-full shadow-md mb-4">
-              <Bank className="h-12 w-12 text-slate-700" />
+              {/* <Bank className="h-12 w-12 text-slate-700" /> */}
+              <div className="h-12 w-12 text-slate-700">
+              <Image src="" />
+              </div>
             </div>
-            <div className="text-white text-lg font-semibold text-center">Bank Account</div>
+            <div className="text-white text-lg font-semibold text-center">Zenith Bank</div>
           </div>
           {/* Right: Details */}
           <div className="flex-1 p-6 flex flex-col justify-between">
