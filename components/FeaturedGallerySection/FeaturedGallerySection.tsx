@@ -28,7 +28,7 @@ const featuredPhotos = [
     alt: "St. Barnabas Orphanage Home",
   },
   {
-    src: "/food-security.png",
+    src: "/care-hospitality.png",
     alt: "Correctional Center/Hospitality",
   },
 ]
