@@ -29,7 +29,7 @@ export function MainNav() {
       <div className="container mx-auto flex h-24 gap-x-5 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
           <motion.div initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
-            <div className="relative p-0.5 border-2 border-blue-500 flex h-20 w-20 items-center justify-center overflow-hidden rounded-full">
+            <div className="relative p-0.5 border-2 border-blue-500 flex w-14 h-14 lg:h-20 lg:w-20 items-center justify-center overflow-hidden rounded-full">
               <Image src={Logo} alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full object-cover object-center" priority/>
               {/* <img src="/DAAF_Logo-1.png" alt="DAAF Logo | Touching lives.." width="588" height="587" className="w-full object-cover object-center" /> */}
             </div>

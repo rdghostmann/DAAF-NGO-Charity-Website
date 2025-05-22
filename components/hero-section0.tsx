@@ -17,7 +17,7 @@ const heroSlides = [
       "Fostering hope, dignity and self-sufficiency through holistic initiatives that promote health, economic empowerment and spiritual growth.",
     button1: { label: "Donate Now", href: "#donate" },
     button2: { label: "Learn More", href: "#about" },
-    bg: "/blue-sky.png",
+    bg: "/bg_church.jpg",
     textColor: "text-slate-900",
     subColor: "text-primary",
     descColor: "text-muted-foreground",
