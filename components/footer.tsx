@@ -6,7 +6,6 @@ import { RiInstagramFill } from "react-icons/ri";
 import { RiTiktokFill } from "react-icons/ri";
 import { RiWhatsappFill } from "react-icons/ri";
 import { FaLocationDot } from "react-icons/fa6";
-import { MdCall } from "react-icons/md";
 
 
 

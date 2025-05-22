@@ -6,7 +6,8 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { Phone, Mail, MapPin } from "lucide-react"
+import { Mail } from "lucide-react"
+import { FaLocationDot } from "react-icons/fa6";
 
 export function ContactSection() {
   return (
@@ -74,7 +75,7 @@ export function ContactSection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-4">
-                  <MapPin className="mt-1 size-5 text-primary" />
+                <FaLocationDot className="mt-1 h-5 w-5 text-primary" />
                   <div>
                     <p className="font-medium">Address</p>
                     <p className="text-muted-foreground">
@@ -83,7 +84,7 @@ export function ContactSection() {
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
-                  <Mail className="mt-1 size-4 text-primary" />
+                <Mail className="h-5 w-5 text-primary" />
                   <div>
                     <p className="font-medium">Email</p>
                     <p className="text-muted-foreground">DaafDoA@gmail.com</p>
