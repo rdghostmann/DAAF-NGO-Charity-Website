@@ -120,7 +120,7 @@ const galleryData = [
     images: [
       {
         id: "ewulu-1",
-        src: "/food-security.png",
+        src: "/ewulu-farm.jpeg",
         alt: "Ewulu Integrated Farm - 1",
       },
     ],
