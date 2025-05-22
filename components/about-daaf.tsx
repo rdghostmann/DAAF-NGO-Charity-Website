@@ -79,8 +79,20 @@ export default function AboutDaaf() {
                 <h2 className="text-3xl font-bold text-slate-800">About DAAF</h2>
               </div>
               <p className="text-lg text-slate-600 mb-6">
-                Learn about our mission, vision, and the impact we're making in communities across Nigeria.
+                The Diocese of Asaba Agape Foundation is a humanitarian and sustainable development
+                organization rooted in the Diocese of Asaba, Anglican Communion in Nigeria.
               </p>
+              <p className="text-lg text-slate-600 mb-6">
+                Over the years the Diocese has impacted on people’s lives particularly the vulnerable persons including the orphans in the society.
+              </p>
+              <p className="text-lg text-slate-600 mb-6">
+                DAAF is intrinsically involved in serving,
+                empowering and uplifting vulnerable persons gender notwithstanding, through holistic
+                initiatives that promote health, economic empowerment and spiritual growth.
+              </p>
+              
+
+
               <div className="flex flex-wrap gap-4">
                 <div className="flex items-center gap-2">
                   <div className="h-1 w-12 bg-primary"></div>
@@ -102,7 +114,7 @@ export default function AboutDaaf() {
             </motion.div>
           </div>
           <motion.div
-            className="order-1 md:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
+            className="order-1 md:order-2 relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
             initial={{ scale: 0.9, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6 }}
@@ -225,7 +237,7 @@ export default function AboutDaaf() {
               <h2 className="text-3xl font-bold text-slate-800">About Us</h2>
             </div>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto mb-4">
-            Over the years the Diocese has impacted on people's
+              Over the years the Diocese has impacted on people's
               lives particularly the vulnerable persons including the orphans in the society.
             </p>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
