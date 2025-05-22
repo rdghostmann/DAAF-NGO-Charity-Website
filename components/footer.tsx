@@ -98,10 +98,6 @@ export function Footer() {
                 </div>
               </div>
               <div className="flex items-center gap-2">
-                <MdCall className="h-5 w-5 text-primary" />
-                <span>+2348030299990</span>
-              </div>
-              <div className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-primary" />
                 <a href="mailto:DaafDoA@gmail.com" className="hover:text-primary underline underline-offset-2 transition">
                   DaafDoA@gmail.com
