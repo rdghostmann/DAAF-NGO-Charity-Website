@@ -36,7 +36,7 @@ export function ActivitiesSection() {
       title: "Food Security - Ewulu Integrated Farm",
       description: "Promoting sustainable agriculture and food security through our integrated farm.",
       icon: <BookOpen className="h-6 w-6" />,
-      image: "/food-security2.png",
+      image: "/food-security1.png",
     },
     {
       id: "correctional",
