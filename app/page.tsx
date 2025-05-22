@@ -7,12 +7,16 @@ import { TestimonialsSection } from "@/components/testimonials-section"
 import { ContactSection } from "@/components/contact-section"
 import { StatsSection } from "@/components/stats-section"
 import { FeaturedGallerySection } from "@/components/FeaturedGallerySection/FeaturedGallerySection"
+import HeroSection2 from "@/components/hero-section2"
+import HeroSection0 from "@/components/hero-section0"
 
 
 export default function Home() {
   return (
     <main>
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <HeroSection0 />
+      {/* <HeroSection2 /> */}
       <AboutSection />
       <StatsSection />
       <ObjectivesSection />
