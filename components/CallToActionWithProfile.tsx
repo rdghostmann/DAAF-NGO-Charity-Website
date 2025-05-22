@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { Button } from "@/components/ui/button"
-import { PDFViewer } from "@/components/pdf-viewer"
 
 export function CallToActionWithProfile() {
   const [open, setOpen] = useState(false)
@@ -28,13 +27,18 @@ export function CallToActionWithProfile() {
           </div>
         </div>
       </section>
+
       <Dialog open={open} onOpenChange={setOpen}>
         <DialogContent className="max-w-5xl mx-auto w-[95vw] h-[90vh] p-0 overflow-hidden">
           <DialogHeader className="p-4 border-b">
             <DialogTitle>Organisational Profile PDF</DialogTitle>
           </DialogHeader>
           <div className="w-full h-[calc(90vh-4rem)] bg-gray-100">
-            <PDFViewer pdfUrl="/DIOCESE-OF-ASABA-AGAPE-FOUNDATION-PROFILE(Updated).pdf" />
+            <iframe
+              src="./DIOCESE-OF-ASABA-AGAPE-FOUNDATION-PROFILE(Updated).pdf"
+              className="w-full h-full"
+              title="Organisational Profile"
+            />
           </div>
         </DialogContent>
       </Dialog>
