@@ -86,7 +86,7 @@ export function PhotoGallery({ galleries, className }: PhotoGalleryProps) {
         <DialogContent className="max-w-4xl w-[90vw]">
           <DialogHeader>
             <DialogTitle>{selectedImage?.alt}</DialogTitle>
-            <DialogDescription>Click outside to close</DialogDescription>
+            <DialogDescription className="hidden">Click outside to close</DialogDescription>
           </DialogHeader>
           {selectedImage && (
             <div className="relative w-full h-[70vh]">

@@ -14,7 +14,7 @@ const galleryData = [
       },
       {
         id: "elder-care-2",
-        src: "/elderly-care-ministry-1.png",
+        src: "/elderly-care-ministry-3.png",
         alt: "Elderly care support - 2",
       },
       {
@@ -120,7 +120,7 @@ const galleryData = [
     images: [
       {
         id: "ewulu-1",
-        src: "/food-security.png",
+        src: "/ewulu-farm.jpeg",
         alt: "Ewulu Integrated Farm - 1",
       },
     ],

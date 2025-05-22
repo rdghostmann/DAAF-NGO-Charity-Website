@@ -38,7 +38,7 @@ export function AboutSection() {
                 </motion.div>
               </div>
               <motion.div
-                className="order-1 md:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
+                className="order-1 md:order-2 relative h-[530px] rounded-2xl overflow-hidden shadow-2xl"
                 initial={{ scale: 0.9, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.6 }}
@@ -64,7 +64,7 @@ export function AboutSection() {
                 className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
               >
                 <motion.div
-                  className="relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
+                  className="relative h-[530px] rounded-2xl overflow-hidden shadow-2xl"
                   initial={{ scale: 0.9, opacity: 0 }}
                   whileInView={{ scale: 1, opacity: 1 }}
                   transition={{ duration: 0.6 }}
@@ -124,7 +124,7 @@ export function AboutSection() {
                 </motion.div>
               </div>
               <motion.div
-                className="order-1 md:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl"
+                className="order-1 md:order-2 relative h-[530px] rounded-2xl overflow-hidden shadow-2xl"
                 initial={{ scale: 0.9, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.6 }}

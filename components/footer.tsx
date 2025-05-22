@@ -6,7 +6,6 @@ import { RiInstagramFill } from "react-icons/ri";
 import { RiTiktokFill } from "react-icons/ri";
 import { RiWhatsappFill } from "react-icons/ri";
 import { FaLocationDot } from "react-icons/fa6";
-import { MdCall } from "react-icons/md";
 
 
 
@@ -96,10 +95,6 @@ export function Footer() {
                   Bishopscourt, 60 Dennis Osadebay Way,<br />
                   P.O. Box 216, Asaba, Delta State, Nigeria
                 </div>
-              </div>
-              <div className="flex items-center gap-2">
-                <MdCall className="h-5 w-5 text-primary" />
-                <span>+2348030299990</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-primary" />
