@@ -43,7 +43,7 @@ export function ActivitiesSection() {
       title: "Correctional Care/Hosp. Ministries",
       description: "Providing spiritual and material support to those in correctional facilities and hospitals.",
       icon: <Heart className="h-6 w-6" />,
-      image: "/food-security2-2.png",
+      image: "/care-hospitality.png",
     }
   ]
 
