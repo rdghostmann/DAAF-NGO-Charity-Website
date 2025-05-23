@@ -1,3 +1,4 @@
+import React from 'react'
 import { ImageResponse } from 'next/og'
 
 // Image metadata
@@ -10,9 +11,11 @@ export const contentType = 'image/png'
 // Image generation
 export default function Icon(): ImageResponse {
   return new ImageResponse(
-    (
-      <div
-        style={{
+    // Use JSX with React.createElement, not plain objects
+    React.createElement(
+      "div",
+      {
+        style: {
           fontSize: 24,
           background: 'green',
           width: size.width,
@@ -22,10 +25,9 @@ export default function Icon(): ImageResponse {
           justifyContent: 'center',
           color: 'white',
           borderRadius: '100%',
-        }}
-      >
-        F
-      </div>
+        }
+      },
+      "F"
     ),
     {
       width: size.width,
