@@ -59,7 +59,7 @@ export function CausesGrid() {
     {
       title: "Hospitality and Prison Visitation",
       description: "Visiting and supporting individuals in hospitals and correctional centers, offering hope, care, and encouragement.",
-      image: "/food-security.png",
+      image: "/care-hospitality.png",
       raised: 40000,
       goal: 150000,
       progress: 30,
