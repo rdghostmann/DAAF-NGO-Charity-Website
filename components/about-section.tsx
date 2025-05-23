@@ -60,29 +60,6 @@ export function AboutSection() {
                     empowering and uplifting vulnerable persons gender notwithstanding, through holistic
                     initiatives that promote health, economic empowerment and spiritual growth.
                   </p>
-
-
-
-                  <div className="flex flex-wrap gap-4">
-                    <div className="flex items-center gap-2">
-                      <div className="h-1 w-12 bg-primary"></div>
-                      <span className="text-sm font-medium">Est. 2008</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="h-1 w-12 bg-primary"></div>
-                      <span className="text-sm font-medium">
-                      </span>
-                        {/* <CountUp end={1000} duration={2} separator="," />+ Lives Impacted */}
-                        <p>+ Lives Impacted</p>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <div className="h-1 w-12 bg-primary"></div>
-                      <span className="text-sm font-medium">
-                        {/* <CountUp end={5} duration={2} />+ Active Programs */}
-                        <p>+ Active Programs</p>
-                      </span>
-                    </div>
-                  </div>
                 </motion.div>
               </div>
               <motion.div
