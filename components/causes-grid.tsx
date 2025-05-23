@@ -35,7 +35,7 @@ export function CausesGrid() {
     {
       title: "Food Security - Ewulu Integrated Farm",
       description: "Promoting sustainable agriculture and food security through our integrated farm.",
-      image: "/ewulu-farm.jpeg",
+      image: "/ewulu-farm2.jpeg",
       raised: 20000,
       goal: 40000,
       progress: 50,
