@@ -97,6 +97,7 @@ export function DonationForm() {
                             className="pl-8"
                             value={oneTimeAmount}
                             onChange={e => setOneTimeAmount(e.target.value)}
+                            disabled
                           />
                         </div>
                       </div>
@@ -140,6 +141,7 @@ export function DonationForm() {
                             className="pl-8"
                             value={monthlyAmount}
                             onChange={e => setMonthlyAmount(e.target.value)}
+                            disabled
                           />
                         </div>
                       </div>
