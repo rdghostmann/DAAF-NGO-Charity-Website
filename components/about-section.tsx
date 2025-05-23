@@ -18,7 +18,7 @@ export function AboutSection() {
               viewport={{ once: true, margin: "-100px" }}
               className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center"
             >
-              <div className="order-2 md:order-1">
+              {/* <div className="order-2 md:order-1">
                 <motion.div
                   initial={{ x: -50, opacity: 0 }}
                   whileInView={{ x: 0, opacity: 1 }}
@@ -35,6 +35,54 @@ export function AboutSection() {
                   <p className="text-lg text-slate-600 mb-6">
                     Join us as we work together to create a more inclusive, caring, and empowered society—one life, one family, and one community at a time.              </p>
 
+                </motion.div>
+              </div> */}
+              <div className="order-2 md:order-1">
+                <motion.div
+                  initial={{ x: -50, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="flex items-center mb-4">
+                    <Target className="h-8 w-8 text-slate-700 mr-3" />
+                    <h2 className="text-3xl font-bold text-slate-800">About DAAF</h2>
+                  </div>
+                  <p className="text-lg text-slate-600 mb-6">
+                    The Diocese of Asaba Agape Foundation is a humanitarian and sustainable development
+                    organization rooted in the Diocese of Asaba, Anglican Communion in Nigeria.
+                  </p>
+                  <p className="text-lg text-slate-600 mb-6">
+                    Over the years the Diocese has impacted on people’s lives particularly the vulnerable persons including the orphans in the society.
+                  </p>
+                  <p className="text-lg text-slate-600 mb-6">
+                    DAAF is intrinsically involved in serving,
+                    empowering and uplifting vulnerable persons gender notwithstanding, through holistic
+                    initiatives that promote health, economic empowerment and spiritual growth.
+                  </p>
+
+
+
+                  <div className="flex flex-wrap gap-4">
+                    <div className="flex items-center gap-2">
+                      <div className="h-1 w-12 bg-primary"></div>
+                      <span className="text-sm font-medium">Est. 2008</span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="h-1 w-12 bg-primary"></div>
+                      <span className="text-sm font-medium">
+                      </span>
+                        {/* <CountUp end={1000} duration={2} separator="," />+ Lives Impacted */}
+                        <p>+ Lives Impacted</p>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="h-1 w-12 bg-primary"></div>
+                      <span className="text-sm font-medium">
+                        {/* <CountUp end={5} duration={2} />+ Active Programs */}
+                        <p>+ Active Programs</p>
+                      </span>
+                    </div>
+                  </div>
                 </motion.div>
               </div>
               <motion.div
