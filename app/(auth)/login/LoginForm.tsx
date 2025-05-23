@@ -14,22 +14,22 @@ const LoginForm = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
     const formData = new FormData(e.currentTarget);
     const email = formData.get("email");
     const password = formData.get("password");
+    const role = formData.get("role");
 
-    if (!email || !password) {
+    if (!email || !password || !role) {
       setLoading(false);
       return toast({
         variant: "destructive",
         title: "Validation Error",
-        description: "Email and Password are required",
+        description: "Email, Password, and Role are required",
       });
-      ;
     }
 
     try {
@@ -37,24 +37,27 @@ const LoginForm = () => {
         redirect: false,
         email,
         password,
+        role,
       });
 
       if (result?.error) {
         return toast({
           variant: "destructive",
           title: "Login Failed",
-          description: "Invalid email or password",
+          description: "Invalid email, password, or role",
         });
-  
       } else {
         toast({
           title: "Login Successful",
           description: "Redirecting to your dashboard...",
         });
-        router.push("/cafestore");
+        // Redirect based on role
+        if (role === "admin") {
+          router.push("/admin");
+        } else {
+          router.push("/dashboard");
+        }
       }
-
-     
     } catch (err) {
       toast({
         variant: "destructive",
@@ -70,7 +73,7 @@ const LoginForm = () => {
     <section className="min-h-screen bg-[#0e100f] flex items-center justify-center px-4">
       <div className="bg-[#1a1c1a] w-full max-w-md p-8 rounded-2xl shadow-lg">
         <h2 className="text-3xl font-bold text-white text-center mb-6">Welcome Back</h2>
-        <p className="text-sm text-gray-400 text-center mb-8">Login to access our special menu</p>
+        <p className="text-sm text-gray-400 text-center mb-8">Login to access your dashboard</p>
 
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="space-y-2">
@@ -97,6 +100,24 @@ const LoginForm = () => {
             />
           </div>
 
+          <div className="space-y-2">
+            <Label htmlFor="role" className="text-gray-300">Role</Label>
+            <select
+              id="role"
+              name="role"
+              required
+              disabled={loading}
+              className="bg-[#2b2e2b] text-white border-[#2b2e2b] rounded-lg w-full py-2 px-3 focus-visible:ring-yellow-600"
+              defaultValue=""
+            >
+              <option value="" disabled>
+                Select Role
+              </option>
+              <option value="user01">User</option>
+              <option value="admin">Administrator</option>
+            </select>
+          </div>
+
           <Button
             type="submit"
             disabled={loading}
@@ -109,7 +130,7 @@ const LoginForm = () => {
         </form>
 
         <div className="mt-6 text-center text-sm text-gray-400">
-          Don't have an account?{' '}
+          Don't have an account?{" "}
           <Link href="/register" className="text-yellow-500 hover:underline">
             Sign up
           </Link>

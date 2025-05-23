@@ -14,14 +14,18 @@ const RegisterForm = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (formData) => {
+  const handleSubmit = async (formData: FormData) => {
     try {
       setLoading(true);
-      const username = formData.get('username');
-      const email = formData.get('email');
-      const password = formData.get('password');
-      const confirmPassword = formData.get('confirmPassword');
-      const phone = formData.get('phone');
+      const username = formData.get('username') as string;
+      const email = formData.get('email') as string;
+      const password = formData.get('password') as string;
+      const confirmPassword = formData.get('confirmPassword') as string;
+      const phone = formData.get('phone') as string;
+      const country = formData.get('country') as string;
+      const state = formData.get('state') as string;
+      const city = formData.get('city') as string;
+      const role = formData.get('role') as string || "user01";
 
       if (password !== confirmPassword) {
         toast({
@@ -29,10 +33,20 @@ const RegisterForm = () => {
           title: "Error",
           description: "Passwords do not match.",
         });
+        setLoading(false);
         return;
       }
 
-      const response = await registerUser({ username, email, password, phone });
+      const response = await registerUser({
+        username,
+        email,
+        password,
+        phone,
+        country,
+        state,
+        city,
+        role,
+      });
 
       if (response?.success) {
         toast({
@@ -44,14 +58,14 @@ const RegisterForm = () => {
         toast({
           variant: "destructive",
           title: "Error",
-          description: "An error occurred while registering.",
+          description: response?.message || "An error occurred while registering.",
         });
       }
-    } catch (error) {
+    } catch (error: any) {
       toast({
         variant: "destructive",
         title: "Error",
-        description: "Failed Internet Connection. Please try again later.",
+        description: error?.message || "Failed Internet Connection. Please try again later.",
       });
     } finally {
       setLoading(false);
@@ -64,15 +78,16 @@ const RegisterForm = () => {
         <h2 className="text-3xl font-bold text-white text-center mb-6">Create an Account</h2>
         <p className="text-sm text-gray-400 text-center mb-8">Sign up to access our special menu</p>
 
-        <form 
-          action={handleSubmit} 
+        <form
+          action={handleSubmit}
           className="space-y-5"
           onSubmit={(e) => {
             e.preventDefault();
-            const formData = new FormData(e.currentTarget);
+            const formData = new FormData(e.currentTarget as HTMLFormElement);
             handleSubmit(formData);
           }}
         >
+          <input type="hidden" name="role" value="user01" />
           <div className="space-y-2">
             <Label htmlFor="username" className="text-gray-300">Username</Label>
             <Input
@@ -101,6 +116,39 @@ const RegisterForm = () => {
               type="tel"
               id="phone"
               name="phone"
+              required
+              className="bg-[#2b2e2b] text-white border-[#2b2e2b] focus-visible:ring-yellow-600"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="country" className="text-gray-300">Country</Label>
+            <Input
+              type="text"
+              id="country"
+              name="country"
+              required
+              className="bg-[#2b2e2b] text-white border-[#2b2e2b] focus-visible:ring-yellow-600"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="state" className="text-gray-300">State</Label>
+            <Input
+              type="text"
+              id="state"
+              name="state"
+              required
+              className="bg-[#2b2e2b] text-white border-[#2b2e2b] focus-visible:ring-yellow-600"
+            />
+          </div>
+
+          <div className="space-y-2">
+            <Label htmlFor="city" className="text-gray-300">City</Label>
+            <Input
+              type="text"
+              id="city"
+              name="city"
               required
               className="bg-[#2b2e2b] text-white border-[#2b2e2b] focus-visible:ring-yellow-600"
             />

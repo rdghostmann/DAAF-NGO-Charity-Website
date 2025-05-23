@@ -1,13 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
+import CountUp from "react-countup"
 
 export function StatsSection() {
   const stats = [
-    { value: "1000+", label: "Lives Impacted" },
-    { value: "15+", label: "Years of Service" },
-    { value: "5+", label: "Active Programs" },
-    { value: "100+", label: "Volunteers" },
+    { value: 1000, suffix: "+", label: "Lives Impacted" },
+    { value: 15, suffix: "+", label: "Years of Service" },
+    { value: 5, suffix: "+", label: "Active Programs" },
+    { value: 100, suffix: "+", label: "Volunteers" },
   ]
 
   return (
@@ -23,7 +24,9 @@ export function StatsSection() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="flex flex-col items-center justify-center text-center"
             >
-              <div className="text-4xl font-bold md:text-5xl">{stat.value}</div>
+              <div className="text-4xl font-bold md:text-5xl">
+                <CountUp end={stat.value} duration={2} suffix={stat.suffix} />
+              </div>
               <div className="mt-2 text-sm font-medium md:text-base">{stat.label}</div>
             </motion.div>
           ))}
