@@ -17,7 +17,7 @@ export default function Icon(): ImageResponse {
       {
         style: {
           fontSize: 24,
-          background: 'green',
+          background: 'blue',
           width: size.width,
           height: size.height,
           display: 'flex',
@@ -27,7 +27,7 @@ export default function Icon(): ImageResponse {
           borderRadius: '100%',
         }
       },
-      "F"
+      "DAAF"
     ),
     {
       width: size.width,
