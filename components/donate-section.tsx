@@ -26,8 +26,9 @@ import {
 import { Heart } from "lucide-react"
 
 export function DonateSection() {
+  const [tab, setTab] = useState("one-time")
   const [oneTimeAmount, setOneTimeAmount] = useState("5000")
-  const [monthlyAmount, setMonthlyAmount] = useState("20")
+  const [monthlyAmount, setMonthlyAmount] = useState("2000")
 
   return (
     <section id="donate" className="bg-gradient-to-br from-white via-indigo-90 to-blue-400 py-24">
@@ -57,7 +58,12 @@ export function DonateSection() {
             </CardHeader>
 
             <CardContent>
-              <Tabs defaultValue="one-time" className="w-full">
+              <Tabs
+                defaultValue="one-time"
+                className="w-full"
+                value={tab}
+                onValueChange={setTab}
+              >
                 <TabsList className="grid w-full grid-cols-2">
                   <TabsTrigger value="one-time">One-time Donation</TabsTrigger>
                   <TabsTrigger value="monthly">Monthly Support</TabsTrigger>
@@ -68,7 +74,7 @@ export function DonateSection() {
                   <div className="space-y-2">
                     <Label>Select Amount</Label>
                     <RadioGroup
-                      defaultValue="5000"
+                      value={oneTimeAmount}
                       onValueChange={setOneTimeAmount}
                       className="grid grid-cols-3 gap-4"
                     >
@@ -109,7 +115,7 @@ export function DonateSection() {
                   <div className="space-y-2">
                     <Label>Select Monthly Amount</Label>
                     <RadioGroup
-                      defaultValue="20"
+                      value={monthlyAmount}
                       onValueChange={setMonthlyAmount}
                       className="grid grid-cols-3 gap-4"
                     >
