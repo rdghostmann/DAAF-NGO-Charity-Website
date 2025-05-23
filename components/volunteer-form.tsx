@@ -11,7 +11,7 @@ import { Checkbox } from "@/components/ui/checkbox"
 
 export function VolunteerForm() {
   return (
-    <section className="bg-primary/5 py-24">
+    <section className="bg-gradient-to-br from-white via-indigo-90 to-blue-400 py-24">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

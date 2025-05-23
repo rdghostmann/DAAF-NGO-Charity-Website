@@ -30,7 +30,7 @@ export function DonateSection() {
   const [monthlyAmount, setMonthlyAmount] = useState("20")
 
   return (
-    <section id="donate" className="bg-primary/5 py-24">
+    <section id="donate" className="bg-gradient-to-br from-white via-indigo-90 to-blue-400 py-24">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -114,9 +114,9 @@ export function DonateSection() {
                       className="grid grid-cols-3 gap-4"
                     >
                       {[
-                        { label: "₦2,000/mo", value: "10", id: "monthly-1" },
-                        { label: "₦5,000/mo", value: "20", id: "monthly-2" },
-                        { label: "₦10,000/mo", value: "50", id: "monthly-3" },
+                        { label: "₦2,000/mo", value: "2000", id: "monthly-1" },
+                        { label: "₦5,000/mo", value: "5000", id: "monthly-2" },
+                        { label: "₦10,000/mo", value: "10000", id: "monthly-3" },
                       ].map(({ label, value, id }) => (
                         <Label
                           key={id}

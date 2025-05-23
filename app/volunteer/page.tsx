@@ -10,8 +10,8 @@ export default function VolunteerPage() {
       <VolunteerHero />
       <VolunteerOpportunities />
       <VolunteerForm />
-      <VolunteerTestimonials />
       <CallToAction />
+      <VolunteerTestimonials />
     </main>
   )
 }

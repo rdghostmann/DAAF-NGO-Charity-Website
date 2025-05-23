@@ -34,10 +34,10 @@ export default function AboutDaaf() {
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/pexels-marte-nyhammer-1117968563-32161313.jpg"
+            src="/elder-1.jpg"
             alt="Abstract background"
             fill
-            className="object-cover opacity-20"
+            className="object-cover opacity-20 bg-center bg-no-repeat"
             priority
           />
         </div>

@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export function CallToAction() {
   return (
-    <section className="bg-primary py-16 text-white">
+    <section className="bg-gradient-to-br from-black via-indigo-90 to-red-600 py-16 text-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           <motion.div

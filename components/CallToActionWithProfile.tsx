@@ -9,7 +9,7 @@ export function CallToActionWithProfile() {
 
   return (
     <>
-      <section className="bg-primary py-16 text-white">
+      <section className="bg-gradient-to-br from-black via-indigo-90 to-red-600 py-16 text-white">
         <div className="container mx-auto px-4 md:px-6">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">Learn More About Us</h2>

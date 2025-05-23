@@ -11,7 +11,7 @@ import { FaLocationDot } from "react-icons/fa6";
 
 export function ContactSection() {
   return (
-    <section id="contact" className="py-24">
+    <section id="contact" className="py-24 bg-gray-30">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
