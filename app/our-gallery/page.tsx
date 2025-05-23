@@ -157,11 +157,7 @@ const galleryData = [
     title: "Education Scholarship Fund",
     description: "Supporting education for underprivileged children in our community.",
     images: [
-      {
-        id: "scholarship-1",
-        src: "/st-barnabas-orphanage-6-1.png",
-        alt: "Education Scholarship Fund - 1",
-      },
+    
       {
         id: "scholarship-2",
         src: "/st-barnabas-orphanage-5.png",
@@ -174,14 +170,10 @@ const galleryData = [
     title: "Hospitality and Prison Visitation",
     description: "Visiting and supporting individuals in hospitals and correctional centers, offering hope, care, and encouragement.",
     images: [
-      {
-        id: "hospitality-1",
-        src: "/food-security.png",
-        alt: "Hospitality and Prison Visitation - 1",
-      },
+      
       {
         id: "hospitality-2",
-        src: "/food-security.png",
+        src: "/care-hospitality.png",
         alt: "Hospitality and Prison Visitation - 2",
       },
     ],

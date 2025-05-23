@@ -26,7 +26,9 @@ const heroSlides = [
   {
     title: "Touching Lives, Transforming Communities",
     description:
-      "Join us in making a difference through faith-driven initiatives, compassion, and community empowerment across Nigeria.",
+    <>
+      "Join us in making a difference through faith-driven initiatives, <br className="hidden lg:block"/> compassion,  and community empowerment across Nigeria.",
+    </>,  
     button1: { label: "Donate Now", href: "/donate" },
     button2: { label: "Learn More", href: "/about" },
     bg: "/bg_7.jpg",
@@ -40,7 +42,7 @@ const heroSlides = [
       "We uplift the less privileged through education, healthcare, and sustainable development programs.",
     button1: { label: "Our Causes", href: "/causes" },
     button2: { label: "Volunteer", href: "/volunteer" },
-    bg: "/bg_7.jpg",
+    bg: "/happy-people.jpg",
     textColor: "text-white",
     subColor: "",
     descColor: "text-white/90",
@@ -106,7 +108,12 @@ export function HeroSection0() {
                 }}
                 >
 
-                <div className={`absolute inset-0 ${slide.bg === "/bg_7.jpg" ? "bg-black/60" : "bg-white/70"}`} />
+                <div className={`absolute inset-0 ${
+    slide.bg === "/bg_7.jpg" || slide.bg === "/happy-people.jpg"
+      ? "bg-black/60"
+      : "bg-white/70"
+  }`}
+/>
             </div>
             <div className="relative z-10 container mx-auto px-4 py-24 flex flex-col items-center text-center">
               <motion.div
