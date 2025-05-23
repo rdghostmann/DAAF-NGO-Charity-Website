@@ -49,7 +49,7 @@ export function ActivitiesSection() {
   ]
 
   return (
-    <section id="activities" className="bg-gradient-to-br from-white via-indigo-90 to-blue-400 py-24">
+    <section id="activities" className="bg-gray-300 py-24">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
