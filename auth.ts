@@ -2,6 +2,7 @@
 import NextAuth, { type AuthOptions, type SessionStrategy } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import User from "@/models/User";
+// @ts-expect-error: No type definitions for bcrypt
 import bcrypt from "bcrypt";
 import { connectToDB } from "./lib/connectDB";
 
@@ -57,7 +58,7 @@ export const authOptions: AuthOptions = {
     }),
   ],
   session: {
-    strategy: "jwt" as SessionStrategy, // Fix: explicitly type as SessionStrategy
+    strategy: "jwt" as SessionStrategy,
   },
   callbacks: {
     async jwt({ token, user }: { token: any; user?: any }) {
