@@ -49,14 +49,14 @@ export function AboutSection() {
                     <Target className="h-8 w-8 text-slate-700 mr-3" />
                     <h2 className="text-3xl font-bold text-slate-800">About DAAF</h2>
                   </div>
-                  <p className="text-lg text-slate-600 mb-6">
+                  <p className="text-sm text-slate-600 mb-6">
                     The Diocese of Asaba Agape Foundation is a humanitarian and sustainable development
                     organization rooted in the Diocese of Asaba, Anglican Communion in Nigeria.
                   </p>
-                  <p className="text-lg text-slate-600 mb-6">
+                  <p className="text-sm text-slate-600 mb-6">
                     Over the years the Diocese has impacted on people’s lives particularly the vulnerable persons including the orphans in the society.
                   </p>
-                  <p className="text-lg text-slate-600 mb-6">
+                  <p className="text-sm text-slate-600 mb-6">
                     DAAF is intrinsically involved in serving,
                     empowering and uplifting vulnerable persons gender notwithstanding, through holistic
                     initiatives that promote health, economic empowerment and spiritual growth.
@@ -113,7 +113,7 @@ export function AboutSection() {
                   <Lightbulb className="h-8 w-8 text-rose-600 mr-3" />
                   <h2 className="text-3xl font-bold text-rose-800">Our Vision</h2>
                 </div>
-                <p className="text-lg text-slate-700 mb-6">
+                <p className="text-sm text-slate-700 mb-6">
                   To be a leading catalyst for positive change, fostering hope, dignity and self-sufficiency among
                   individuals and communities while reflecting the love and compassion of God through holistic development
                   and service.
@@ -142,7 +142,7 @@ export function AboutSection() {
                     <Target className="h-8 w-8 text-indigo-700 mr-3" />
                     <h2 className="text-3xl font-bold text-indigo-800">Our Mission</h2>
                   </div>
-                  <p className="text-lg text-slate-700 mb-6">
+                  <p className="text-sm text-slate-700 mb-6">
                     To serve and empower individuals, families, and communities in the Diocese of Asaba and beyond through
                     education, healthcare, food security, economic empowerment, social services, and spiritual growth initiatives—
                     promoting values of compassion, justice, and inclusivity.
