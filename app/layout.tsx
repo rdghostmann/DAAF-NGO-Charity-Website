@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   title: "Diocese of Asaba Agape Foundation (DAAF) - Touching Lives",
   description: "A humanitarian and sustainable development organization rooted in the Diocese of Asaba, Anglican Communion in Nigeria.",
   generator: 'RdTechSolutions',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/favicon.png', type: 'image/png' },
+    ],
+  }
 };
 
 export default function RootLayout({
