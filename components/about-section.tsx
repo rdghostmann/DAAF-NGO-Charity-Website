@@ -11,7 +11,7 @@ export function AboutSection() {
         <div className="mx-auto max-w-6xl">
 
           {/* About DAAF Section */}
-          <section className="py-24 px-4 bg-gradient-to-br from-white via-emerald-50 to-sky-100">
+          <section className="py-24 px-4">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -81,7 +81,7 @@ export function AboutSection() {
           </section>
 
           {/* Vision Section */}
-          <section className="py-24 px-4 bg-gradient-to-br from-sky-50 via-white to-rose-50">
+          <section className="py-24 px-4">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -123,7 +123,7 @@ export function AboutSection() {
           </section>
 
           {/* Mission Section */}
-          <section className="py-24 px-4 bg-gradient-to-br from-white via-indigo-890 to-slate-100">
+          <section className="py-24 px-4">
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
