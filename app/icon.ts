@@ -27,7 +27,7 @@ export default function Icon(): ImageResponse {
           borderRadius: '100%',
         }
       },
-      "DAAF"
+      "D"
     ),
     {
       width: size.width,
