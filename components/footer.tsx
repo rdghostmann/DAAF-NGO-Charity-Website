@@ -12,7 +12,7 @@ export function Footer() {
       }}
     >
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-60" />
+      <div className="absolute inset-0 bg-black bg-opacity-90" />
 
       {/* Footer Content */}
       <div className="relative container mx-auto px-4 py-12 md:px-6 text-white">

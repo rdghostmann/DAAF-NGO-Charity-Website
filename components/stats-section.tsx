@@ -12,7 +12,7 @@ export function StatsSection() {
   ]
 
   return (
-    <section className="bg-gradient-to-br from-black via-indigo-90 to-red-600 py-16 text-primary-foreground">
+    <section className="bg-gradient-to-br from-black via-indigo-90 to-blue-600 py-16 text-primary-foreground">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {stats.map((stat, index) => (
