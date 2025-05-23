@@ -26,8 +26,9 @@ import {
 import { Heart } from "lucide-react"
 
 export function DonateSection() {
+  const [tab, setTab] = useState("one-time")
   const [oneTimeAmount, setOneTimeAmount] = useState("5000")
-  const [monthlyAmount, setMonthlyAmount] = useState("20")
+  const [monthlyAmount, setMonthlyAmount] = useState("2000")
 
   return (
     <section id="donate" className="bg-primary/5 py-24">
@@ -57,7 +58,12 @@ export function DonateSection() {
             </CardHeader>
 
             <CardContent>
-              <Tabs defaultValue="one-time" className="w-full">
+              <Tabs
+                defaultValue="one-time"
+                className="w-full"
+                value={tab}
+                onValueChange={setTab}
+              >
                 <TabsList className="grid w-full grid-cols-2">
                   <TabsTrigger value="one-time">One-time Donation</TabsTrigger>
                   <TabsTrigger value="monthly">Monthly Support</TabsTrigger>
@@ -68,7 +74,7 @@ export function DonateSection() {
                   <div className="space-y-2">
                     <Label>Select Amount</Label>
                     <RadioGroup
-                      defaultValue="5000"
+                      value={oneTimeAmount}
                       onValueChange={setOneTimeAmount}
                       className="grid grid-cols-3 gap-4"
                     >
@@ -109,14 +115,14 @@ export function DonateSection() {
                   <div className="space-y-2">
                     <Label>Select Monthly Amount</Label>
                     <RadioGroup
-                      defaultValue="20"
+                      value={monthlyAmount}
                       onValueChange={setMonthlyAmount}
                       className="grid grid-cols-3 gap-4"
                     >
                       {[
-                        { label: "₦2,000/mo", value: "10", id: "monthly-1" },
-                        { label: "₦5,000/mo", value: "20", id: "monthly-2" },
-                        { label: "₦10,000/mo", value: "50", id: "monthly-3" },
+                        { label: "₦2,000/mo", value: "2000", id: "monthly-1" },
+                        { label: "₦5,000/mo", value: "5000", id: "monthly-2" },
+                        { label: "₦10,000/mo", value: "10000", id: "monthly-3" },
                       ].map(({ label, value, id }) => (
                         <Label
                           key={id}
