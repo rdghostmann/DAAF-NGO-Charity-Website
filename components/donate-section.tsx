@@ -31,7 +31,7 @@ export function DonateSection() {
   const [monthlyAmount, setMonthlyAmount] = useState("2000")
 
   return (
-    <section id="donate" className="bg-blue-400 py-24">
+    <section id="donate" className="bg-gray-200 py-24">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
