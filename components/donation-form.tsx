@@ -1,5 +1,6 @@
 "use client"
 
+import React, { useState } from "react"
 import { motion } from "framer-motion"
 import {
   Card,
@@ -17,6 +18,22 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Heart } from "lucide-react"
 
 export function DonationForm() {
+  // State for one-time and monthly donation amounts
+  const [oneTimeAmount, setOneTimeAmount] = useState("")
+  const [monthlyAmount, setMonthlyAmount] = useState("")
+
+  // Preset values
+  const oneTimePresets = [
+    { label: "₦5,000", value: "5000" },
+    { label: "₦10,000", value: "10000" },
+    { label: "₦20,000", value: "20000" },
+  ]
+  const monthlyPresets = [
+    { label: "₦2,000/mo", value: "2000" },
+    { label: "₦5,000/mo", value: "5000" },
+    { label: "₦10,000/mo", value: "10000" },
+  ]
+
   return (
     <section className="py-16 md:py-24">
       <div className="container mx-auto px-4 md:px-6">
@@ -48,19 +65,23 @@ export function DonationForm() {
                     <div className="space-y-6">
                       <div className="space-y-2">
                         <Label>Select Amount</Label>
-                        <RadioGroup defaultValue="50" className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                          {["₦5,000", "₦10,000", "₦20,000"].map((amount, index) => (
+                        <RadioGroup
+                          value={oneTimeAmount}
+                          onValueChange={setOneTimeAmount}
+                          className="grid grid-cols-2 sm:grid-cols-3 gap-4"
+                        >
+                          {oneTimePresets.map((preset, index) => (
                             <Label
                               key={index}
                               htmlFor={`amount-${index}`}
                               className="flex cursor-pointer flex-col items-center justify-center rounded-md border-2 border-muted p-4 hover:bg-muted transition-all duration-200 [&:has(:checked)]:border-primary"
                             >
                               <RadioGroupItem
-                                value={["5000", "10000", "20000"][index]}
+                                value={preset.value}
                                 id={`amount-${index}`}
                                 className="sr-only"
                               />
-                              <span className="text-sm font-medium">{amount}</span>
+                              <span className="text-sm font-medium">{preset.label}</span>
                             </Label>
                           ))}
                         </RadioGroup>
@@ -74,6 +95,8 @@ export function DonationForm() {
                             type="number"
                             placeholder="Enter amount"
                             className="pl-8"
+                            value={oneTimeAmount}
+                            onChange={e => setOneTimeAmount(e.target.value)}
                           />
                         </div>
                       </div>
@@ -85,19 +108,23 @@ export function DonationForm() {
                     <div className="space-y-6">
                       <div className="space-y-2">
                         <Label>Select Monthly Amount</Label>
-                        <RadioGroup defaultValue="2000" className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                          {["₦2,000/mo", "₦5,000/mo", "₦10,000/mo"].map((amount, index) => (
+                        <RadioGroup
+                          value={monthlyAmount}
+                          onValueChange={setMonthlyAmount}
+                          className="grid grid-cols-2 sm:grid-cols-3 gap-4"
+                        >
+                          {monthlyPresets.map((preset, index) => (
                             <Label
                               key={index}
                               htmlFor={`monthly-${index}`}
                               className="flex cursor-pointer flex-col items-center justify-center rounded-md border-2 border-muted p-4 hover:bg-muted transition-all duration-200 [&:has(:checked)]:border-primary"
                             >
                               <RadioGroupItem
-                                value={["5000", "10000", "20000"][index]}
+                                value={preset.value}
                                 id={`monthly-${index}`}
                                 className="sr-only"
                               />
-                              <span className="text-sm font-medium">{amount}</span>
+                              <span className="text-sm font-medium">{preset.label}</span>
                             </Label>
                           ))}
                         </RadioGroup>
@@ -111,6 +138,8 @@ export function DonationForm() {
                             type="number"
                             placeholder="Enter amount"
                             className="pl-8"
+                            value={monthlyAmount}
+                            onChange={e => setMonthlyAmount(e.target.value)}
                           />
                         </div>
                       </div>
