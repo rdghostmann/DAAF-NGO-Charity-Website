@@ -2,7 +2,6 @@
 import NextAuth, { type AuthOptions, type SessionStrategy } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import User from "@/models/User";
-// @ts-expect-error: No type definitions for bcrypt
 import bcrypt from "bcrypt";
 import { connectToDB } from "./lib/connectDB";
 
