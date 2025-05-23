@@ -76,7 +76,7 @@ export function TestimonialsSection() {
               >
                 {testimonials.map((testimonial, index) => (
                   <div key={index} className="w-full flex-shrink-0 px-4">
-                    <Card className="border-none bg-gradient-to-br from-gray-500 via-indigo-10 to-blue-300  shadow-none">
+                    <Card className="border-none bg-gray-300  shadow-none">
                       <CardContent className="p-6 text-center md:p-10">
                         <Quote className="mx-auto mb-4 h-10 w-10 text-primary opacity-50" />
                         <p className="mb-6 text-xl font-medium md:text-2xl">"{testimonial.quote}"</p>
