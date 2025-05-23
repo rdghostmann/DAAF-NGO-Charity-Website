@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef } from "react"
+import { useEffect,useRef, useState } from "react"
 import Image from "next/image"
 import { motion, useScroll } from "framer-motion"
 import { ChevronLeft, ChevronRight, Users, Lightbulb, Target } from "lucide-react"
@@ -9,6 +9,23 @@ import CountUp from "react-countup"
 
 export default function AboutDaaf() {
   const containerRef = useRef(null)
+
+  // variables for parallax effect
+  const bgRef = useRef(null);
+  const [offset, setOffset] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (bgRef.current) {
+        // Adjust the divisor for more/less parallax effect
+        setOffset(window.scrollY * 0.4);
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "end start"],
@@ -28,13 +45,22 @@ export default function AboutDaaf() {
     }
   }
 
+
+
   return (
     <div ref={containerRef} className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative h-[70vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
+        <div
+          ref={bgRef}
+          className="absolute inset-0 z-0 will-change-transform"
+          style={{
+            transform: `translateY(${offset}px)`,
+            transition: "transform 0.1s linear",
+          }}
+        >
           <Image
-            src="/elder-1.jpg"
+            src="/cause-5.jpg"
             alt="Abstract background"
             fill
             className="object-cover opacity-20 bg-center bg-no-repeat"
@@ -90,7 +116,7 @@ export default function AboutDaaf() {
                 empowering and uplifting vulnerable persons gender notwithstanding, through holistic
                 initiatives that promote health, economic empowerment and spiritual growth.
               </p>
-              
+
 
 
               <div className="flex flex-wrap gap-4">
