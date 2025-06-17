@@ -82,7 +82,7 @@ export function Footer() {
                     <RiFacebookFill className="h-5 w-5 text-blue-600 hover:text-white transition" />
                   </span>
                 </Link>
-                <Link href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                <Link href="https://x.com/AsabaDaaf?t=91aA_4YpcOXcae_o0xq62g&s=09" target="_blank" aria-label="Twitter">
                   <span className="flex items-center justify-center rounded-full border bg-sky-100 h-9 w-9 hover:bg-sky-500 transition">
                     <RiTwitterFill className="h-5 w-5 text-sky-400 hover:text-white transition" />
                   </span>
@@ -107,7 +107,7 @@ export function Footer() {
                 </Link>
 
               </div>
-              
+
             </address>
           </div>
         </div>
