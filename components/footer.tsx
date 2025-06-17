@@ -100,7 +100,7 @@ export function Footer() {
                   </span>
                 </Link>
 
-                <Link href="https://wa.me/234XXXXXXXXXX" target="_blank" aria-label="WhatsApp">
+                <Link href="https://wa.me/2347047001915" target="_blank" aria-label="WhatsApp">
                   <span className="flex items-center justify-center rounded-full border bg-green-100 h-9 w-9 hover:bg-green-500 transition">
                     <RiWhatsappFill className="h-5 w-5 text-green-500 hover:text-white transition" />
                   </span>
