@@ -94,7 +94,7 @@ export function Footer() {
                   </span>
                 </Link>
 
-                <Link href="https://www.tiktok.com/@yourpage" target="_blank" aria-label="TikTok">
+                <Link href="tiktok.com/@diocese_of_asaba_" target="_blank" aria-label="TikTok">
                   <span className="flex items-center justify-center rounded-full border bg-gray-200 h-9 w-9 hover:bg-black transition">
                     <RiTiktokFill className="h-5 w-5 text-black hover:text-white transition" />
                   </span>
