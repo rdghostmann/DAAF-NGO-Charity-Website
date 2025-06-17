@@ -77,32 +77,37 @@ export function Footer() {
               </div>
               {/* Social Icons */}
               <div className="flex gap-3 pt-4 justify-start">
-                <Link href="https://www.facebook.com/yourpage" target="_blank" aria-label="Facebook">
+                <Link href="https://www.facebook.com/share/164APfWfmk/" target="_blank" aria-label="Facebook">
                   <span className="flex items-center justify-center rounded-full border bg-blue-100 h-9 w-9 hover:bg-blue-600 transition">
                     <RiFacebookFill className="h-5 w-5 text-blue-600 hover:text-white transition" />
                   </span>
                 </Link>
-                <Link href="https://twitter.com/yourpage" target="_blank" aria-label="Twitter">
+                <Link href="https://twitter.com/" target="_blank" aria-label="Twitter">
                   <span className="flex items-center justify-center rounded-full border bg-sky-100 h-9 w-9 hover:bg-sky-500 transition">
                     <RiTwitterFill className="h-5 w-5 text-sky-400 hover:text-white transition" />
                   </span>
                 </Link>
-                <Link href="https://www.instagram.com/yourpage" target="_blank" aria-label="Instagram">
+
+                <Link href="https://www.instagram.com/daaf_ngo?igsh=MW1nNndlZjE5czE3MA==" target="_blank" aria-label="Instagram">
                   <span className="flex items-center justify-center rounded-full border bg-pink-100 h-9 w-9 hover:bg-pink-500 transition">
                     <RiInstagramFill className="h-5 w-5 text-pink-500 hover:text-white transition" />
                   </span>
                 </Link>
+
                 <Link href="https://www.tiktok.com/@yourpage" target="_blank" aria-label="TikTok">
                   <span className="flex items-center justify-center rounded-full border bg-gray-200 h-9 w-9 hover:bg-black transition">
                     <RiTiktokFill className="h-5 w-5 text-black hover:text-white transition" />
                   </span>
                 </Link>
+
                 <Link href="https://wa.me/234XXXXXXXXXX" target="_blank" aria-label="WhatsApp">
                   <span className="flex items-center justify-center rounded-full border bg-green-100 h-9 w-9 hover:bg-green-500 transition">
                     <RiWhatsappFill className="h-5 w-5 text-green-500 hover:text-white transition" />
                   </span>
                 </Link>
+
               </div>
+              
             </address>
           </div>
         </div>
@@ -116,6 +121,7 @@ export function Footer() {
             Made with <Heart className="mx-1 h-4 w-4 text-primary" /> for those in need
           </p>
         </div>
+        
       </div>
     </footer>
   );
